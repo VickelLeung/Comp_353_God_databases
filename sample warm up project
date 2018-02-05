@@ -140,6 +140,56 @@ VALUES(29, "chamillionaire", "male", "theyseemerolling@theyhating.com");
 
 INSERT INTO Student(SID, Name, Gender, Email)
 VALUES(30, "knukles", "male", "douknowdawae@thequeen.com");
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(36, "Monique Richard, "female", "moniquois@gmail.com");
+
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(37, "Mulan", "female", "Mushu@gmail.com");
+
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(38, "David Dobrik", "male", "daviddo@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(39, "Liza Koshy", "female", "littlebrown@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(40, "Katy Perry", "female", "popsicles@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(41, "Logan Paul", "male", "fakerMcfake@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(42, "Hannah Montana", "female", "bestOfBothWorlds@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(43, "Water Bottle", "male", "hydration@earth.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(44, "North West", "female", "baby@kanye.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(45, "Mary McGill", "female", "mary@InferiorLibrary.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(46, "John Smith", "male", "unknown@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(47, "Merlin", "male", "merlin345@camelot.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(48, "Shakira", "female", "hipsDonLie@notLying.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(49, "Marilyn Monroe", "female", "bougie@fancy.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(50, "Vickel Leung", "male", "LunchBox@vehicle.com");
+
+
+
+
 
 -- inserting project
 INSERT INTO Project(PID, Name)
