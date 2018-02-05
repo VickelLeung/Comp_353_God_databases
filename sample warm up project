@@ -13,8 +13,10 @@ CREATE TABLE Project(
 
 CREATE TABLE TEAMS(
     TID INT AUTO_INCREMENT PRIMARY KEY,
-    LeaderID INT NOT NULL,
-    NoOfMembers INT NOT NULL
+    LeaderID INT DEFAULT "NULL",
+    NoOfMembers INT NOT NULL,
+    CHECK(NoOfMembers <=4),
+    UNIQUE(LeaderID)
 );
 
 CREATE TABLE Members(
