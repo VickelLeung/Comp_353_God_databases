@@ -1,0 +1,118 @@
+
+CREATE TABLE Student(
+    SID INT AUTO_INCREMENT PRIMARY KEY,
+    Name CHAR(20),
+    Gender CHAR(6),
+    Email VARCHAR(50)
+);
+ 
+CREATE TABLE Project(
+    PID INT AUTO_INCREMENT PRIMARY KEY,
+    Name CHAR(30) NOT NULL
+);
+
+CREATE TABLE TEAMS(
+    TID INT AUTO_INCREMENT PRIMARY KEY,
+    LeaderID INT NOT NULL,
+    NoOfMembers INT NOT NULL
+);
+
+CREATE TABLE Members(
+    SID INT AUTO_INCREMENT,
+    TID INT AUTO_INCREMENT,
+    DateJoined VAR(20) NOT NULL,
+    Role VAR(20) NOT NULL,
+    PRIMARY KEY(SID, TID)
+
+);
+
+CREATE TABLE Demos(
+    SID INT AUTO_INCREMENT,
+    TID INT AUTO_INCREMENT,
+    date VAR(20) NOT NULL,
+    time VAR(20) NOT NULL,
+    Grade VAR(1) NOT NULL,
+    PRIMARY KEY(SID, TID)
+
+);
+-- insteting student database
+INSERT INTO Student(SID, Name, Gender, Email) 
+VALUES(1,"kim jon un", "male", "kimjon@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(2, "elon musk", "male", "elonmusk@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES (3, "justin trudeau", "male", "jtrudeau@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(4, "bruce lee", "male", "bigdragon@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(5, "jacky chan", "male", "littledragon@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(6, "jessica alba", "female", "sweetangel@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(7, "sandra bulock", "female", "indepwoman@yahoo.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(8, "kim khardashian", "female", "themostbeauty@yahoo.com");
+
+-- inserting project
+INSERT INTO Project(PID, Name)
+VALUES(1, 'database');
+
+
+-- inserting teams
+INSERT INTO Teams(TID, LeaderID, NoOfMembers)
+VALUES(1, 11111, 4);
+
+INSERT INTO Teams
+VALUES(2, 10101, 4);
+
+-- inserting members
+-- kim
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(1 , 1, '1st february, 2017', 'leader');
+
+-- elon
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(2 , 1, '4th february, 2018', 'coder');
+
+-- sandra
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(7 , 1, '20th february, 2018', 'manager');
+
+
+-- kim khar
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(8 , 1, '8th february, 2018', 'support');
+
+-- justin
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(3 , 2, '12th february, 2018', 'leader');
+
+-- bruce
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(4 , 2, '8th february, 2018', 'coder');
+
+-- jacky
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(5 , 2, '4th february, 2018', 'support');
+
+-- jessica
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(6 , 2, '4th february, 2018', 'coder');
+
+-- inserting demos
+    
+-- kim jon demos
+INSERT INTO Demos(SID, TID, date, time, Grade)
+VALUES(1, 1, "3rd march, 2018", "19:00", "A");
+
+-- justin 
+INSERT INTO Demos(SID, TID, date, time, Grade)
+VALUES(3, 2, "8rd march, 2018", "17:00", "B");
+
