@@ -140,6 +140,23 @@ VALUES(29, "chamillionaire", "male", "theyseemerolling@theyhating.com");
 
 INSERT INTO Student(SID, Name, Gender, Email)
 VALUES(30, "knukles", "male", "douknowdawae@thequeen.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(31, "Isaac Newton", "male", "OuchThatHurt@apple.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(32, "Mona Lisa", "female", "smile@no.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(33, "Mario Turtle", "male", "itsMeMario@gmail.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(34, "Lana Linguine", "female", "pasta_beauty@italy.com");
+
+INSERT INTO Student(SID, Name, Gender, Email)
+VALUES(35, "Ayah Badran", "female", "abadran96@gmail.com");
+
+
 INSERT INTO Student(SID, Name, Gender, Email)
 VALUES(36, "Monique Richard, "female", "moniquois@gmail.com");
 
