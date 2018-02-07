@@ -1,0 +1,47 @@
+Every student has to be a member of exactly one team. 
+Each team is assigned one demo slot, identified by date and time. 
+No team may have more than 4 members.  
+The leader of a team is unique if exists. It will be null otherwise.  
+
+E/R model of the database
+
+
+1. Which student(s) is not a member of any team? 
+
+2. For each team, list its members. 
+###############REVISE don’t think its good############# 
+SELECT Name, Members.TID
+FROM Student, Members, TEAMS
+WHERE Student.SID = Members.SID AND TEAMS.TID = Members.TID;
+3. Who was not present in the demo of a team? 
+
+
+
+4. List the teams which that have <4 members. 
+SELECT *
+FROM TEAMS
+WHERE NoOfMembers < 4
+
+5.Given a TID, list the names of the members.
+*********************************************************************
+SELECT Name, TID
+FROM Student, Members
+WHERE # = Members.TID AND Student.SID = Members.SID;
+
+6. Given a date, list all the teams that have demos on that day.
+SELECT TID
+FROM Demos
+WHERE date = "given date...";
+
+7.For each team that is not complete (<4 members), list the TID and the capacity to increase. (That is, if a team has 1 member, the capacity to increase would be 3). 
+
+SELECT TID
+FROM 
+
+8.Given a student Name or ID, find his/her team ID.
+****************************************** Only did for ID need to find how to also with name **********************************
+SELECT TID
+FROM Members
+WHERE 9 = Members.SID
+
+9. Given a student Name or ID, find the names and SID of his/her teammates. 
