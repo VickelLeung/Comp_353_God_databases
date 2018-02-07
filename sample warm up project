@@ -358,3 +358,7 @@ VALUES(50, 13, '2018-01-01', "assistant");
 -- inserting project
 INSERT INTO Project(PID, Name)
 VALUES(1, 'database');
+
+-- inserting project
+INSERT INTO Project(PID, Name)
+VALUES(2, 'database');
