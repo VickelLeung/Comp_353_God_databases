@@ -6,35 +6,33 @@ The leader of a team is unique if exists. It will be null otherwise.  
 E/R model of the database
 
 
-1. Which student(s) is not a member of any team? 
-
-SELECT Name
+1. Which student(s) is not a member of any team? (Good, I think...)
+SELECT *
 FROM Student, Members
-WHERE Student.SID not in (SELECT SID FROM Members);
-
+WHERE Student.SID <> Members.SID AND Members.SID NOT in (SELECT * FROM Student WHERE Student.SID);
 2. For each team, list its members. 
 
 
-###############REVISE don’t think its good############# 
+###############REVISE don’t think its good############# (Missing #11 element tuple)
 SELECT Name, Members.TID
 FROM Student, Members, Teams
-WHERE Student.SID = Members.SID AND Teams.TID = Members.TID;
+WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
 SELECT Student.Name
 FROM Student, Members, Teams
-WHERE Members.SID = Student.SID AND Teams.TID = Members.TID;
+WHERE Members.SID = Student.SID AND Teams.TID = Members.TID
+Order by ;
 
 3. Who was not present in the demo of a team? 
 
 
 
-4. List the teams which that have <4 members. 
+4. List the teams which that have <4 members.(Good) 
 SELECT TID
 FROM Teams
 WHERE NoOfMembers < 4
 
-5.Given a TID, list the names of the members.
-*********************************************************************
+5.Given a TID, list the names of the members.(Good)
 SELECT Name, TID
 FROM Student, Members
 WHERE # = Members.TID AND Student.SID = Members.SID;
@@ -43,7 +41,7 @@ SELECT Name
 FROM Student, Members
 WHERE int[placeholder] = Members.TID and Student.SID = Members.SID;
 
-6. Given a date, list all the teams that have demos on that day.
+6. Given a date, list all the teams that have demos on that day. (Good)
 SELECT TID
 FROM Demos
 WHERE date = "given date...";
@@ -53,12 +51,13 @@ WHERE date = "given date...";
 SELECT TID
 FROM 
 
-8.Given a student Name or ID, find his/her team ID.
+8.Given a student Name or ID, find his/her team ID. (Good with id, but missing "given student name...")
 ****************************************** Only did for ID need to find how to also with name **********************************
 SELECT TID
-FROM Members, Student
+FROM Members
 WHERE 9 = Members.SID OR (SELECT Student.SID AS theID into @myVar FROM Student;) theID = Members.SID;
 
 9. Given a student Name or ID, find the names and SID of his/her teammates. 
 
-
+SELECT SID 
+FROM Members, Teams
