@@ -405,6 +405,9 @@ VALUES(50, 13, '2018-01-01', "assistant");
 INSERT INTO Project(PID, Name)
 VALUES(1, 'database');
 
--- inserting project
 INSERT INTO Project(PID, Name)
 VALUES(2, 'database');
+
+-- inserting demos
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(1, 1, "2018-02-04", "19:00", "D");
