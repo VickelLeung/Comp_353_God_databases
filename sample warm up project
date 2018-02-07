@@ -252,105 +252,155 @@ VALUES(50, "Vickel Leung", "male", "LunchBox@vehicle.com");
 
 --inserting members
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(1, 1, '2018-1-1', "leader");
+VALUES(1, 1,'2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(2, 1, '2018-1-1', "leader");
+VALUES(2, 2, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(3, 1, '2018-1-1', "leader");
+VALUES(3, 3, '2018-01-02', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(4, 1, '2018-1-1', "leader");
+VALUES(4, 4, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(5, 1, '2018-1-1', "leader");
+VALUES(5, 5, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(6, 1, '2018-1-1', "leader");
+VALUES(6, 6, '2018-01-11', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(7, 1, '2018-1-1', "leader");
+VALUES(7, 7, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(8, 1, '2018-1-1', "leader");
+VALUES(8, 8, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(9, 1, '2018-1-1', "leader");
+VALUES(9, 9, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(10, 1, '2018-1-1', "leader");
+VALUES(10, 10, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(11, 1, '2018-1-1', "leader");
+VALUES(11, 11, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(12, 1, '2018-1-1', "leader");
+VALUES(12, 1, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(13, 1, '2018-1-1', "leader");
+VALUES(13, 2, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(14, 1, '2018-1-1', "leader");
+VALUES(14, 3, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(15, 1, '2018-1-1', "leader");
+VALUES(15, 4, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(16, 1, '2018-1-1', "leader");
+VALUES(16, 5, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(17, 1, '2018-1-1', "leader");
+VALUES(17, 6, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(18, 1, '2018-1-1', "leader");
+VALUES(18, 7, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(19, 1, '2018-1-1', "leader");
+VALUES(19, 8, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(20, 1, '2018-1-1', "leader");
+VALUES(20, 9,'2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(21, 1, '2018-1-1', "leader");
+VALUES(21, 10, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(22, 1, '2018-1-1', "leader");
+VALUES(22, 11, '2018-01-01', "support");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(23, 1, '2018-1-1', "leader");
+VALUES(23, 1, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(24, 1, '2018-1-1', "leader");
+VALUES(24, 2, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(25, 1, '2018-1-1', "leader");
+VALUES(25, 3, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(26, 1, '2018-1-1', "leader");
+VALUES(26, 4, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(27, 1, '2018-1-1', "leader");
+VALUES(27, 5, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(28, 1, '2018-1-1', "leader");
+VALUES(28, 6, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(29, 1, '2018-1-1', "leader");
+VALUES(29, 7, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(30, 1, '2018-1-1', "leader");
+VALUES(30, 8, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(31, 1, '2018-1-1', "leader");
+VALUES(31, 9, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(32, 1, '2018-1-1', "leader");
+VALUES(32, 10, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(33, 1, '2018-1-1', "leader");
+VALUES(33, 11, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(34, 1, '2018-1-1', "leader");
+VALUES(34, 1, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(35, 1, '2018-1-1', "leader");
+VALUES(35, 2, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(36, 1, '2018-1-1', "leader");
+VALUES(36, 3, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(37, 1, '2018-1-1', "leader");
+VALUES(37, 4, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(38, 1, '2018-1-1', "leader");
+VALUES(38, 5, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(39, 1, '2018-1-1', "leader");
+VALUES(39, 6, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(40, 1, '2018-1-1', "leader");
+VALUES(40, 7, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(41, 1, '2018-1-1', "leader");
+VALUES(41, 8, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(42, 1, '2018-1-1', "leader");
+VALUES(42, 9, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(43, 1, '2018-1-1', "leader");
+VALUES(43, 10, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(44, 1, '2018-1-1', "leader");
+VALUES(44, 11, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(45, 1, '2018-1-1', "leader");
+VALUES(45, 12, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(46, 1, '2018-1-1', "leader");
+VALUES(46, 12, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(47, 1, '2018-1-1', "leader");
+VALUES(47, 12, '2018-01-01', "assistant");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(48, 1, '2018-1-1', "leader");
+VALUES(48, 13, '2018-01-01', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(49, 1, '2018-1-1', "leader");
+VALUES(49, 13, '2018-01-01', "coder");
 INSERT INTO Members(SID, TID, dateJoined, role)
-VALUES(50, 1, '2018-1-1', "leader");
+VALUES(50, 13, '2018-01-01', "assistant");
+
+
+
+
+-- inserting project
+INSERT INTO Project(PID, Name)
+VALUES(1, 'database');
+
+
+-- inserting teams
+INSERT INTO Teams(TID, LeaderID, NoOfMembers)
+VALUES(1, 11111, 4);
+
+INSERT INTO Teams
+VALUES(2, 10101, 4);
+
+-- inserting members
+-- kim
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(1 , 1, '1st february, 2017', 'leader');
+
+-- elon
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(2 , 1, '4th february, 2018', 'coder');
+
+-- sandra
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(7 , 1, '20th february, 2018', 'manager');
+
+
+-- kim khar
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(8 , 1, '8th february, 2018', 'support');
+
+-- justin
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(3 , 2, '12th february, 2018', 'leader');
+
+-- bruce
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(4 , 2, '8th february, 2018', 'coder');
+
+-- jacky
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(5 , 2, '4th february, 2018', 'support');
+
+-- jessica
+INSERT INTO Members(SID, TID, DateJoined, Role)
+VALUES(6 , 2, '4th february, 2018', 'coder');
+
 -- inserting demos
     
 -- kim jon demos
