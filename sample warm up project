@@ -352,12 +352,12 @@ VALUES(49, 1, '2018-1-1', "leader");
 INSERT INTO Members(SID, TID, dateJoined, role)
 VALUES(50, 1, '2018-1-1', "leader");
 
-
-
-
 -- inserting project
 INSERT INTO Project(PID, Name)
 VALUES(1, 'database');
+
+INSERT INTO Project(PID, Name)
+VALUES(2, 'database');
 
 
 -- inserting teams
