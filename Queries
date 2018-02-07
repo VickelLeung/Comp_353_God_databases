@@ -8,13 +8,17 @@ E/R model of the database
 
 1. Which student(s) is not a member of any team? 
 
+SELECT Name
+FROM Student, Members
+WHERE Student.SID not in (SELECT SID FROM Members);
+
 2. For each team, list its members. 
 
 
 ###############REVISE don’t think its good############# 
 SELECT Name, Members.TID
-FROM Student, Members, TEAMS
-WHERE Student.SID = Members.SID AND TEAMS.TID = Members.TID;
+FROM Student, Members, Teams
+WHERE Student.SID = Members.SID AND Teams.TID = Members.TID;
 
 SELECT Student.Name
 FROM Student, Members, Teams
