@@ -53,7 +53,7 @@ FROM
 ****************************************** Only did for ID need to find how to also with name **********************************
 SELECT TID
 FROM Members, Student
-WHERE 9 = Members.SID OR (name[placeholder] = Student.name AND Student.SID = Members.SID);
+WHERE 9 = Members.SID OR (SELECT Student.SID AS theID into @myVar FROM Student;) theID = Members.SID;
 
 9. Given a student Name or ID, find the names and SID of his/her teammates. 
 
