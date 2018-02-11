@@ -409,5 +409,71 @@ INSERT INTO Project(PID, Name)
 VALUES(2, 'database');
 
 -- inserting demos
+
 INSERT INTO Demos(SID,TID, date, time, Grade)
-VALUES(1, 1, "2018-02-04", "19:00", "D");
+VALUES(1, 1, "2018-02-04", "12:00", "D");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(12, 1, "2018-02-05", "12:00", "A");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(2, 2, "2018-02-04", "12:20", "A");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(13, 2, "2018-02-05", "12:20", "B");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(3, 3, "2018-02-04", "12:30", "B");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(25, 3, "2018-02-05", "12:30", "C");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(26, 4, "2018-02-04", "12:40", "D");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(15, 4, "2018-02-05", "12:40", "A");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(5, 5, "2018-02-04", "12:50", "A");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(27, 5, "2018-02-05", "12:50", "A");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(6, 6, "2018-02-04", "13:00", "A");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(28, 6, "2018-02-05", "13:00", "B");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(7, 7, "2018-02-04", "13:10", "D");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(40, 7, "2018-02-05", "13:10", "D");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(8, 8, "2018-02-04", "13:20", "C");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(19, 8, "2018-02-05", "13:20", "D");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(31, 9, "2018-02-04", "13:30", "C");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(42, 9, "2018-02-05", "13:30", "A");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(10, 10, "2018-02-04", "13:40", "B");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(21, 10, "2018-02-05", "13:40", "A");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(11, 11, "2018-02-04", "13:50", "B");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(44, 11, "2018-02-05", "13:50", "C");
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(45, 12, "2018-02-04", "14:00", "D");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(47, 12, "2018-02-05", "14:00", "D");
+
+
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(48, 13, "2018-02-04", "14:10", "C");
+INSERT INTO Demos(SID,TID, date, time, Grade)
+VALUES(50, 13, "2018-02-05", "14:10", "D");
+
+
