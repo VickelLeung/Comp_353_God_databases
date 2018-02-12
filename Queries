@@ -17,7 +17,10 @@ SELECT Student.Name, Teams.TID
 FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
-3. Who was not present in the demo of a team? 
+SELECT Student.Name
+FROM Student
+WHERE Student.SID IN (SELECT Demos.SID FROM Demos);
+3. Who was not present in the demo of a team? (good)
 
 
 
