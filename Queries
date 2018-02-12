@@ -64,3 +64,7 @@ WHERE Members.TID = (SELECT TID
 FROM Members 
 WHERE Members.SID = (SELECT SID FROM Student WHERE ".." = SID OR ".." = Name)); 
 
+select Name from Student Inner Join Members on Student.SID = Members.SID 
+where Members.TID = (select TID from Members 
+where SID = (select SID from Student where Name = "Vickel Leung")) 
+and Name != "Vickel Leung";
