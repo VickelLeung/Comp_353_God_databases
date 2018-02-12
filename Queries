@@ -17,12 +17,11 @@ SELECT Student.Name, Teams.TID
 FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
+3. Who was not present in the demo of a team? (Good)
+
 SELECT Student.Name
 FROM Student
 WHERE Student.SID IN (SELECT Demos.SID FROM Demos);
-3. Who was not present in the demo of a team? (good)
-
-
 
 4. List the teams which that have <4 members.(Good) 
 SELECT TID
@@ -45,13 +44,14 @@ WHERE date = "given date...";
 
 7.For each team that is not complete (<4 members), list the TID and the capacity to increase. (That is, if a team has 1 member, the capacity to increase would be 3). 
 
-SELECT TID
-FROM 
+SELECT TID,4 - NoOfMembers AS Capacity 
+FROM Teams 
+WHERE NoOfMembers < 4; 
 
 8.Given a student Name or ID, find his/her team ID. (Good with id, but missing "given student name...") (GOOD)
 
 SELECT TID
 FROM Members
-WHERE Members.SID = (SELECT SID FROM Student WHERE ".." = SID OR ".." = Name);
+WHERE Members.SID = (SELECT SID FROM Student WHERE 2 = SID OR ".." = Name);
 
 9. Given a student Name or ID, find the names and SID of his/her teammates. 
