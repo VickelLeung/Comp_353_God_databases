@@ -17,12 +17,8 @@ SELECT Student.Name, Teams.TID
 FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
-<<<<<<< Updated upstream
-3. Who was not present in the demo of a team? (Good)
-
-=======
 3. Who was not present in the demo of a team? (good)
->>>>>>> Stashed changes
+
 SELECT Student.Name
 FROM Student
 WHERE Student.SID IN (SELECT Demos.SID FROM Demos);
