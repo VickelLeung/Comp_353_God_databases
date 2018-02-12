@@ -1,4 +1,4 @@
-Every student has to be a member of exactly one team. 
+﻿Every student has to be a member of exactly one team. 
 Each team is assigned one demo slot, identified by date and time. 
 No team may have more than 4 members.  
 The leader of a team is unique if exists. It will be null otherwise.  
@@ -10,18 +10,12 @@ E/R model of the database
 SELECT *
 FROM Student, Members
 WHERE Student.SID <> Members.SID AND Members.SID NOT in (SELECT * FROM Student WHERE Student.SID);
-2. For each team, list its members. 
 
+2. For each team, list its members.(Good) 
 
-###############REVISE don’t think its good############# (Missing #11 element tuple)
-SELECT Name, Members.TID
+SELECT Student.Name, Teams.TID
 FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
-
-SELECT Student.Name
-FROM Student, Members, Teams
-WHERE Members.SID = Student.SID AND Teams.TID = Members.TID
-Order by ;
 
 3. Who was not present in the demo of a team? 
 
