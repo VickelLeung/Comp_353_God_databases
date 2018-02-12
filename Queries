@@ -55,9 +55,12 @@ WHERE Members.SID = (SELECT SID FROM Student WHERE [SID placeholder] = SID OR "[
 
 
 9. Given a student Name or ID, find the names and SID of his/her teammates. 
-
-SELECT Student.Name
-FROM Student, Members
-WHERE Members.SID = (SELECT SID FROM Student WHERE 0 = SID) OR
-             Student.Name = (SELECT Name From Student Where "Vickel Leung" = Name);
+// currently printing out all the names next to the student ids in the team. Find way to match the names 
+//except the student id // or name given  
+ 
+SELECT Name, Members.SID 
+FROM Members, Student 
+WHERE Members.TID = (SELECT TID 
+FROM Members 
+WHERE Members.SID = (SELECT SID FROM Student WHERE ".." = SID OR ".." = Name)); 
 
