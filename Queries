@@ -34,7 +34,7 @@ WHERE NoOfMembers < 4;
 
 SELECT Name, TID
 FROM Student, Members
-WHERE 4 = Members.TID AND Student.SID = Members.SID;
+WHERE [int placeholder] = Members.TID AND Student.SID = Members.SID;
 
 6. Given a date, list all the teams that have demos on that day. (Good)
 
@@ -55,3 +55,9 @@ FROM Members
 WHERE Members.SID = (SELECT SID FROM Student WHERE [SID placeholder] = SID OR "[name placeholder]" = Name);
 
 9. Given a student Name or ID, find the names and SID of his/her teammates. 
+
+SELECT Student.Name
+FROM Student, Members
+WHERE Members.SID = (SELECT SID FROM Student WHERE 0 = SID) OR
+             Student.Name = (SELECT Name From Student Where "Vickel Leung" = Name);
+
