@@ -19,7 +19,6 @@ FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
 3. Who was not present in the demo of a team? (good)
-
 SELECT Student.Name
 FROM Student
 WHERE Student.SID IN (SELECT Demos.SID FROM Demos);
@@ -53,6 +52,7 @@ WHERE NoOfMembers < 4;
 SELECT TID
 FROM Members
 WHERE Members.SID = (SELECT SID FROM Student WHERE [SID placeholder] = SID OR "[name placeholder]" = Name);
+
 
 9. Given a student Name or ID, find the names and SID of his/her teammates. 
 
