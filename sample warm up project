@@ -1,5 +1,5 @@
 
-CREATE TABLE Students(
+CREATE TABLE Student(
     SID INT AUTO_INCREMENT PRIMARY KEY,
     Name CHAR(20),
     Gender CHAR(6),
