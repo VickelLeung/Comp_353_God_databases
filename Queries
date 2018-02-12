@@ -6,32 +6,38 @@ The leader of a team is unique if exists. It will be null otherwise.  
 E/R model of the database
 
 
-1. Which student(s) is not a member of any team? (Good, I think...)
+1. Which student(s) is not a member of any team? (Good)
+
 SELECT *
 FROM Student, Members
 WHERE Student.SID <> Members.SID AND Members.SID NOT in (SELECT * FROM Student WHERE Student.SID);
 
 2. For each team, list its members.(Good) 
+
 SELECT Student.Name, Teams.TID
 FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
 3. Who was not present in the demo of a team? (good)
+
 SELECT Student.Name
 FROM Student
 WHERE Student.SID IN (SELECT Demos.SID FROM Demos);
 
 4. List the teams which that have <4 members.(Good) 
+
 SELECT TID
 FROM Teams
 WHERE NoOfMembers < 4;
 
 5.Given a TID, list the names of the members.(Good)
+
 SELECT Name, TID
 FROM Student, Members
 WHERE 4 = Members.TID AND Student.SID = Members.SID;
 
 6. Given a date, list all the teams that have demos on that day. (Good)
+
 SELECT TID
 FROM Demos
 WHERE date = "given date...";
@@ -42,7 +48,7 @@ SELECT TID, 4 - NoOfMembers AS Capacity
 FROM Teams 
 WHERE NoOfMembers < 4; 
 
-8.Given a student Name or ID, find his/her team ID. (Good with id, but missing "given student name...") (GOOD)
+8.Given a student Name or ID, find his/her team ID. (GOOD)
 
 SELECT TID
 FROM Members
