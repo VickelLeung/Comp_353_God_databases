@@ -19,6 +19,7 @@ FROM Student, Members, Teams
 WHERE Student.SID = Members.SID AND Teams.TID = Members.TID ORDER BY TID;
 
 3. Who was not present in the demo of a team? (good)
+
 SELECT Student.Name
 FROM Student
 WHERE Student.SID IN (SELECT Demos.SID FROM Demos);
@@ -54,15 +55,7 @@ FROM Members
 WHERE Members.SID = (SELECT SID FROM Student WHERE [SID placeholder] = SID OR "[name placeholder]" = Name);
 
 
-9. Given a student Name or ID, find the names and SID of his/her teammates. 
-// currently printing out all the names next to the student ids in the team. Find way to match the names 
-//except the student id // or name given  
- 
-SELECT Name, Members.SID 
-FROM Members, Student 
-WHERE Members.TID = (SELECT TID 
-FROM Members 
-WHERE Members.SID = (SELECT SID FROM Student WHERE ".." = SID OR ".." = Name)); 
+9. Given a student Name or ID, find the names and SID of his/her teammates. (Good)
 
 select Name from Student Inner Join Members on Student.SID = Members.SID 
 where Members.TID = (select TID from Members 
