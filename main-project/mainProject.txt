@@ -1,0 +1,29 @@
+
+CREATE TABLE Employee(
+    SIN INT AUTO_INCREMENT PRIMARY KEY,
+    Name CHAR(20),
+    DOB CHAR(20),
+    Gender CHAR(6),
+    Address CHAR(50),
+    PhoneNumber CHAR(10),
+    Salary int
+);
+
+CREATE TABLE Departments(
+    Name CHAR(20),
+    ID int,
+    PRIMARY KEY(SID, TID)
+);
+
+CREATE TABLE Projects(
+    ID int PRIMARY KEY,
+    Location CHAR(20),
+    Name CHAR(20)
+);
+
+CREATE TABLE Dependant{
+   SIN int Primary KEY,
+   Name CHAR(20),
+   Gender CHAR(6),
+   DOB CHAR(20)
+}
