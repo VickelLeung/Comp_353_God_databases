@@ -1,9 +1,9 @@
 
 CREATE TABLE Employees(
     SIN INT AUTO_INCREMENT PRIMARY KEY,
-    UNIQUE (SID) NOT NULL,
+    UNIQUE (SID),
     Name CHAR(20) NOT NULL,
-    UNIQUE(Name) NOT NULL,
+    UNIQUE(Name),
     Gender CHAR(6) NOT NULL,
     DOB CHAR(20) NOT NULL,
     Address CHAR(50) NOT NULL,
