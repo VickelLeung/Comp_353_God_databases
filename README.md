@@ -2,7 +2,7 @@
 
 **Introduction**
 <br >
-Just a couple of starving students trying to make ends meet with a project about database for academic purpose.
+Just a couple of starving students trying to make ends meet with a project about databases for academic purposes.
 
 **Team Members:**
 - Vickel Leung
