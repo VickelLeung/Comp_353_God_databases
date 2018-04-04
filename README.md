@@ -9,6 +9,3 @@ Just a couple of starving students trying to make ends meet with a project about
 - Ayah Badran
 - Monique Richard
 - Patrick Bui
-
--[] finding da wae
--[x] finish E/R
