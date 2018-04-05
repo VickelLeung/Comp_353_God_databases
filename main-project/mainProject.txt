@@ -12,30 +12,29 @@ CREATE TABLE Employees(
     DeptNumber int NOT NULL
 );
 
-ALTER TABLE Employees ADD FOREIGN KEY (Deptnumber) REFERENCES Departments(Deptnumber);
+ALTER TABLE Employees ADD FOREIGN KEY (Deptnumber) REFERENCES Departments(ID);
 
 CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
     Name CHAR(20) NOT NULL,
     Gender CHAR(6) NOT NULL,
     DOB VAR(20) NOT NULL,
-    EmployeeSIN INT
+    EmployeeSIN INT,
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
  );
-
-ALTER TABLE Dependants ADD FOREIGN KEY (EmployeeSIN) REFERENCES Employees(EmployeesSIN);
 
 CREATE TABLE RelatesTo(
     EmployeeSIN int NOT NULL,
     DependantSIN int NOT NULL,
-    FOREIGN KEY (DependantSIN) REFERENCES Dependants(DependantSIN),
-    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(DependantSIN)
+    FOREIGN KEY (DependantSIN) REFERENCES Dependants(SID),
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
 );
 
 CREATE TABLE Supervises(
     SubordinateIN int NOT NULL,
     ManagerSIN int NOT NULL,
-    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SubordinateSIN),
-    FOREIGN KEY (ManagerSIN) REFERENCES Employees(ManagerSIN)
+    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN),
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN)
 );
 
 CREATE TABLE Departments(
@@ -58,23 +57,23 @@ CREATE TABLE Projects(
     Stage CHAR(20) NOT NULL,
     DeptID int NOT NULL,
     ManagerID int NOT NULL,
-    FOREIGN KEY (DeptID) REFERENCES Departments(DeptID),
-    FOREIGN KEY (ManagerID) REFERENCES Employees(ManagerID)    
+    FOREIGN KEY (DeptID) REFERENCES Departments(ID),
+    FOREIGN KEY (ManagerID) REFERENCES Employees(SIN)    
 );
 
 CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
     HoursWorked int,
-    FOREIGN KEY (WorkerSIN) REFERENCES Employee(WorkerSIN),
-    FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
+    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN),
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ID)
  );
  
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
     StartDate date NOT NULL,
-    FOREIGN KEY (ManagerSIN) REFERENCES Employee(ManagerSIN),
-    FOREIGN KEY (DeptNum) REFERENCES Departments(DeptNum)
+    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN),
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID)
   );
     
