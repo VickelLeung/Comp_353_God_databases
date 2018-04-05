@@ -127,6 +127,10 @@ CREATE TABLE Dependants(
     DOB VAR(20) NOT NULL,
     EmployeeSIN INT
  );
+
+
+
+
 =====================================================================================
 
 INSERT INTO Dependants
@@ -257,6 +261,41 @@ INSERT INTO Locations
 	'Hershey Park', 1
 );
 
+
+=====================================================================================
+
+CREATE TABLE RelatesTo(
+    EmployeeSIN int NOT NULL,
+    DependantSIN int NOT NULL,
+    FOREIGN KEY (DependantSIN) REFERENCES Dependants(SID),
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
+);
+
+=====================================================================================
+
+INSERT INTO RelatesTo
+	VALUES(
+
+);
+
+
+=====================================================================================
+
+CREATE TABLE Supervises(
+    SubordinateIN int NOT NULL,
+    ManagerSIN int NOT NULL,
+    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN),
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN)
+);
+
+=====================================================================================
+
+
+
+
+
+
+
 =====================================================================================
 
 CREATE TABLE Projects1(
@@ -269,28 +308,135 @@ CREATE TABLE Projects1(
 );
 =====================================================================================
 
-INSERT INTO Projects1
-	VALUES(1, '', '', 'preliminary' , 1, 1
+*Dept and managerid?? not sure with managerID Halp plozz*
+
+
+INSERT INTO Projects
+	VALUES(1, 'Washington', 'Cascade', 'preliminary' , 1, 1
 
 );
 
-INSERT INTO Projects1
-	VALUES(1, '', '', 'intermediate' , 2, 2
+INSERT INTO Projects
+	VALUES(2, 'Montreal', 'Colossus', 'intermediate' , 2, 2
 
 );
 
-INSERT INTO Projects1
-	VALUES(1, '', '', advanced, 3, 3
-
-);
-
-
-INSERT INTO Projects1
-	VALUES(1, '', '', 'complete', 4, 4
+INSERT INTO Projects
+	VALUES(3, 'Vancouver', 'Nitro', advanced, 3, 3
 
 );
 
 
+INSERT INTO Projects
+	VALUES(4, 'Utah', 'Project X', 'complete', 4, 4
+
+);
+
+INSERT INTO Projects
+	VALUES(5, 'Dubai', Yoda Y', 'complete', 5, 5
+
+);
+
+INSERT INTO Projects
+	VALUES(6, 'Tokyo', 'Nitro', advanced, 6, 6
+
+);
+
+INSERT INTO Projects
+	VALUES(7, 'Seoul', 'romeo', 'intermediate' , 7, 7
+
+);
+
+INSERT INTO Projects
+	VALUES(8, 'Shanghai', 'Mr.Coffee', 'preliminary' , 8, 8
+
+);
+
+INSERT INTO Projects
+	VALUES(9, 'Hong Kong', 'MangoOnDiet', advanced, 9, 9
+
+);
+
+INSERT INTO Projects
+	VALUES(10, 'Amsterdam', 'redLights', 'intermediate' , 10, 10
+
+);
+
+=====================================================================================
+
+CREATE TABLE WorksOn(
+    WorkerSIN int NOT NULL,
+    ProjectID int NOT NULL,
+    HoursWorked int,
+    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN),
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ID)
+ );
+
+=====================================================================================
+
+INSERT INTO WorksOn
+	VALUES(1, 1, 56
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(2, 1, 24
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(3, 1, 16
+	
+);
+
+
+INSERT INTO WorksOn
+	VALUES(4, 2, 10
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(5, 2, 29
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(6, 3, 22
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(7, 3, 43
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(8, 4, 26
+	
+);
+
+INSERT INTO WorksOn
+	VALUES(9, 4, 32
+	
+);
+
+=====================================================================================
+
+ CREATE TABLE Manages(
+    DeptNum int NOT NULL,
+    ManagerSIN int NOT NULL,
+    StartDate date NOT NULL,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN),
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID)
+  );
+
+=====================================================================================
+
+
+INSERT INTO Manages
+	VALUES( 1, 1 , '2018-03-10'
+
+);
 
 
 
