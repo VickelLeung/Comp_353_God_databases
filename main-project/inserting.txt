@@ -157,7 +157,7 @@ INSERT INTO Departments
 
 INSERT INTO Departments
 	VALUES(
-	'Information and technology', 2
+	'Info and tech', 2
 );
 
 INSERT INTO Departments
@@ -167,12 +167,12 @@ INSERT INTO Departments
 
 INSERT INTO Departments
 	VALUES(
-	'Sales, 4
+	'Sales', 4
 );
 
 INSERT INTO Departments
 	VALUES(
-	'Human Ressources', 5
+	'Human Resources', 5
 );
 
 INSERT INTO Departments
@@ -322,7 +322,7 @@ INSERT INTO Projects
 );
 
 INSERT INTO Projects
-	VALUES(3, 'Vancouver', 'Nitro', advanced, 3, 3
+	VALUES(3, 'Vancouver', 'Nitro', 'advanced', 3, 3
 
 );
 
