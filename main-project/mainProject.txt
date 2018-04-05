@@ -43,7 +43,7 @@ CREATE TABLE Departments(
     UNIQUE(Name),
     ID int,
     UNIQUE(ID),
-    PRIMARY KEY(SID, TID)
+    PRIMARY KEY (SID, TID)
 );
 
 CREATE TABLE Locations(
@@ -66,10 +66,12 @@ CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
     HoursWorked int,
-    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN) ON DELETE CASCADE,
+    PRIMARY KEY CLUSTERED (WorkerSIN, ProjectID),
+    FOREIGN KEY (WorkerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (ProjectID) REFERENCES Projects(ID) ON DELETE CASCADE
  );
  
+
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
