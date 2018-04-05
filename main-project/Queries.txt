@@ -1,0 +1,19 @@
+1)Find all employee with highest to lowest salary
+
+2) Find all employee working on more than 1 project or zero project
+
+3) Find employee being supervised by supervisor
+
+1. Inserting/updating/tuples to relations/tables in your database. Examples of such tables include Projects, Employees, Departments, etc. The system should also allow operations of insert/update/delete of tuples and/or attributes. For example, we should be able to update attribute “Hours worked”, which is used to calculate the stipend of employees based on the hours she/he worked on different projects, considering the “hourly” charge for each employee (it is not necessary the same for all employees). 
+2. Queries like who works under which employee, 
+How much each employee gets, 
+In what stage a project is (considering for instance 4 levels: preliminary, intermediate, advanced, and complete)
+ Who works on which project; 
+List the project managed by each department? 
+3. Each employee is involved in most and least number projects? 
+4. What is the total pay for each project?
+ For each department? 
+For the company in a certain period? 
+5. Which department manager is also the manager of some projects? 6. Etc…
+
+
