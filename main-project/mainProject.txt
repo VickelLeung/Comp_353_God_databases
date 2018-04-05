@@ -34,6 +34,7 @@ CREATE TABLE Dependants(
 CREATE TABLE Supervises(
     SubordinateIN int NOT NULL,
     ManagerSIN int NOT NULL,
+    PRIMARY KEY (SubordinateSIN),
     FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
 );
@@ -48,7 +49,9 @@ CREATE TABLE Departments(
 
 CREATE TABLE Locations(
     Name CHAR(20) NOT NULL,
-    DeptNum INT PRIMARY KEY NOT NULL
+    DeptNum INT PRIMARY KEY NOT NULL,
+    PRIMARY KEY CLUSTERED (Name, DeptNum),
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
 
 CREATE TABLE Projects(
@@ -76,6 +79,7 @@ CREATE TABLE WorksOn(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
     StartDate date NOT NULL,
+    PRIMARY KEY(DeptNum),
     FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN) ON DELETE CASCADE,
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
