@@ -12,6 +12,8 @@ CREATE TABLE Employees(
     DeptNumber int NOT NULL
 );
 
+ALTER TABLE Employees ADD FOREIGN KEY (Deptnumber) REFERENCES Departments(Deptnumber);
+
 CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
     Name CHAR(20) NOT NULL,
@@ -19,6 +21,22 @@ CREATE TABLE Dependants(
     DOB VAR(20) NOT NULL,
     EmployeeSIN INT
  );
+
+ALTER TABLE Dependants ADD FOREIGN KEY (EmployeeSIN) REFERENCES Employees(EmployeesSIN);
+
+CREATE TABLE RelatesTo(
+    EmployeeSIN int NOT NULL,
+    DependantSIN int NOT NULL,
+    FOREIGN KEY (DependantSIN) REFERENCES Dependants(DependantSIN),
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(DependantSIN)
+);
+
+CREATE TABLE Supervises(
+    SubordinateIN int NOT NULL,
+    ManagerSIN int NOT NULL,
+    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SubordinateSIN),
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(ManagerSIN)
+);
 
 CREATE TABLE Departments(
     Name CHAR(20),
@@ -29,8 +47,8 @@ CREATE TABLE Departments(
 );
 
 CREATE TABLE Locations(
-    Name CHAR(20),
-    DeptNum INT PRIMARY KEY
+    Name CHAR(20) NOT NULL,
+    DeptNum INT PRIMARY KEY NOT NULL
 );
 
 CREATE TABLE Projects(
@@ -39,5 +57,24 @@ CREATE TABLE Projects(
     Name CHAR(20) NOT NULL,
     Stage CHAR(20) NOT NULL,
     DeptID int NOT NULL,
-    ManagerID int NOT NULL    
+    ManagerID int NOT NULL,
+    FOREIGN KEY (DeptID) REFERENCES Departments(DeptID),
+    FOREIGN KEY (ManagerID) REFERENCES Employees(ManagerID)    
 );
+
+CREATE TABLE WorksOn(
+    WorkerSIN int NOT NULL,
+    ProjectID int NOT NULL,
+    HoursWorked int,
+    FOREIGN KEY (WorkerSIN) REFERENCES Employee(WorkerSIN),
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
+ );
+ 
+ CREATE TABLE Manages(
+    DeptNum int NOT NULL,
+    ManagerSIN int NOT NULL,
+    StartDate date NOT NULL,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employee(ManagerSIN),
+    FOREIGN KEY (DeptNum) REFERENCES Departments(DeptNum)
+  );
+    
