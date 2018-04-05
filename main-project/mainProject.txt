@@ -31,6 +31,7 @@ CREATE TABLE Departments(
 CREATE TABLE Locations(
     Name CHAR(20),
     DeptNum INT PRIMARY KEY
+);
 
 CREATE TABLE Projects(
     ID int PRIMARY KEY,
