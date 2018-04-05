@@ -20,21 +20,22 @@ CREATE TABLE Dependants(
     Gender CHAR(6) NOT NULL,
     DOB VAR(20) NOT NULL,
     EmployeeSIN INT,
-    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) 
+    ON DELETE CASCADE
  );
 
-CREATE TABLE RelatesTo(
+/*CREATE TABLE RelatesTo(
     EmployeeSIN int NOT NULL,
     DependantSIN int NOT NULL,
-    FOREIGN KEY (DependantSIN) REFERENCES Dependants(SID),
-    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
-);
+    FOREIGN KEY (DependantSIN) REFERENCES Dependants(SID) ON DELETE CASCADE,
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
+);/*
 
 CREATE TABLE Supervises(
     SubordinateIN int NOT NULL,
     ManagerSIN int NOT NULL,
-    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN),
-    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN)
+    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
 );
 
 CREATE TABLE Departments(
@@ -57,23 +58,23 @@ CREATE TABLE Projects(
     Stage CHAR(20) NOT NULL,
     DeptID int NOT NULL,
     ManagerID int NOT NULL,
-    FOREIGN KEY (DeptID) REFERENCES Departments(ID),
-    FOREIGN KEY (ManagerID) REFERENCES Employees(SIN)    
+    FOREIGN KEY (DeptID) REFERENCES Departments(ID) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerID) REFERENCES Employees(SIN) ON DELETE CASCADE    
 );
 
 CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
     HoursWorked int,
-    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN),
-    FOREIGN KEY (ProjectID) REFERENCES Projects(ID)
+    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ID) ON DELETE CASCADE
  );
  
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
     StartDate date NOT NULL,
-    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN),
-    FOREIGN KEY (DeptNum) REFERENCES Departments(ID)
+    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
     
