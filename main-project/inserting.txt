@@ -1,0 +1,296 @@
+=====================================================================================
+
+CREATE TABLE Employees(
+    SIN INT AUTO_INCREMENT PRIMARY KEY,
+    UNIQUE (SIN),
+    Name CHAR(30) NOT NULL,
+    UNIQUE(Name),
+    Gender CHAR(6) NOT NULL,
+    DOB CHAR(20) NOT NULL,
+    Address CHAR(50) NOT NULL,
+    PhoneNumber CHAR(15)NOT NULL,
+    Salary int NOT NULL,
+    DeptNumber int NOT NULL
+);
+=====================================================================================
+
+INSERT INTO Employees
+	VALUES( 
+1, 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 35, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+2, 'Jessica Alba', 'Female', '1981-04-28', 'goddessville', '514-819-9282', 20, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+3, 'Charlie Chaplin', 'Male', '1889-04-16', 'hilariousVille', '514-125-9583', 21, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+4, 'Beyonce Knowles', 'Female', '1981-09-04', 'AllTheSingleLadiesVille', '514-832-8745', 18, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+5, 'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 22, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+6, 'Jennifer Love Hewitt', 'Female', '1979-03-21', 'loveVille', '514-573-9283', 28, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+7, 'Ron Jeremy', 'Male', '1953-03-12', 'spreadDaLove', '514-534-8282', 25, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+8, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 30, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+9, 'Lil Wayne', 'Male', '1982-09-227, 'rapVille', '514-894-2573', 12, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+10, 'Jennifer Lawrence', 'Female', '1990-08-15', 'lawVille', '514-244-5783', 60, 1 
+);
+
+
+INSERT INTO Employees
+	VALUES( 
+11, 'Tom Cruise', 'Male', '1962-08-03', 'cruisingU', '514-564-9233', 35, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+12, 'Miley Cyrus', 'Female', '1992-11-23', 'wrekyoballz', '514-295-7283', 27, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+13, 'Stephen Hawking, 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+14, 'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 1 
+);
+
+
+INSERT INTO Employees
+	VALUES( 
+15, 'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+16, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 1 
+);
+
+
+INSERT INTO Employees
+	VALUES( 
+17, 'Kate Upton', 'Female', '1992-09-10', 'daModelVille', '450-295-8479', 30, 1 
+);
+
+
+INSERT INTO Employees
+	VALUES( 
+18, 'Sean Penn', 'Male', '1960-08-17', 'professionalVille', '438-293-8231', 29, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+19, 'Emma Watson', 'Female', '1990-04-15', 'careDaEarthVille', '438-532-9293', 41, 1 
+);
+
+INSERT INTO Employees
+	VALUES( 
+20, 'Clint Eastwood', 'Male', '1930-05-31', 'farEastVille', '514-283-2543', 29, 1 
+);
+
+=====================================================================================
+
+CREATE TABLE Dependants(
+    SID INT AUTO_INCREMENT PRIMARY KEY,
+    Name CHAR(30) NOT NULL,
+    Gender CHAR(6) NOT NULL,
+    DOB VAR(20) NOT NULL,
+    EmployeeSIN INT
+ );
+=====================================================================================
+
+INSERT INTO Dependants
+	Values(1, 'Micheal Jackson', 'Male', '1958-08-29', 1
+);
+
+
+=====================================================================================
+
+CREATE TABLE Departments(
+    Name CHAR(20),
+    UNIQUE(Name),
+    ID int,
+    UNIQUE(ID),
+    PRIMARY KEY(ID, Name)
+);
+=====================================================================================
+
+
+INSERT INTO Departments
+	VALUES(
+	'Marketing', 1
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Information and technology', 2
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Employee Management', 3
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Sales, 4
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Human Ressources', 5
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Research and Development', 6
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Production and quality assurance', 7
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Customer Service', 8
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Supply Chain', 9
+);
+
+INSERT INTO Departments
+	VALUES(
+	'Purchasing', 10
+);
+
+=====================================================================================
+
+
+CREATE TABLE Locations(
+    Name CHAR(20),
+    DeptNum INT PRIMARY KEY
+);
+
+=====================================================================================
+
+INSERT INTO Locations
+	VALUES(
+	'Disney Land', 1
+);
+
+INSERT INTO Locations
+	VALUES(
+	'WonderLand', 2
+);
+
+INSERT INTO Locations
+	VALUES(
+	'LaRonde', 3
+);
+
+INSERT INTO Locations
+	VALUES(
+	'Walt Disney', 4
+);
+
+INSERT INTO Locations
+	VALUES(
+	'Disney Land', 5
+);
+
+INSERT INTO Locations
+	VALUES(
+	'Universal Studio', 6
+);
+
+INSERT INTO Locations
+	VALUES(
+	'Sea world', 7
+);
+
+
+INSERT INTO Locations
+	VALUES(
+	'Magic Kingdom', 8
+);
+
+INSERT INTO Locations
+	VALUES(
+	'Universal Orlando', 9
+);
+
+INSERT INTO Locations
+	VALUES(
+	'Hershey Park', 1
+);
+
+=====================================================================================
+
+CREATE TABLE Projects1(
+    ID int PRIMARY KEY,
+    Location CHAR(20) NOT NULL,
+    Name CHAR(20) NOT NULL,
+    Stage CHAR(20) NOT NULL,
+    DeptID int NOT NULL,
+    ManagerID int NOT NULL    
+);
+=====================================================================================
+
+INSERT INTO Projects1
+	VALUES(1, '', '', 'preliminary' , 1, 1
+
+);
+
+INSERT INTO Projects1
+	VALUES(1, '', '', 'intermediate' , 2, 2
+
+);
+
+INSERT INTO Projects1
+	VALUES(1, '', '', advanced, 3, 3
+
+);
+
+
+INSERT INTO Projects1
+	VALUES(1, '', '', 'complete', 4, 4
+
+);
+
+
+
+
+
