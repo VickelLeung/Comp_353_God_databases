@@ -22,47 +22,47 @@ INSERT INTO Employees
 
 INSERT INTO Employees
 	VALUES( 
-2, 'Jessica Alba', 'Female', '1981-04-28', 'goddessville', '514-819-9282', 20, 1 
+2, 'Jessica Alba', 'Female', '1981-04-28', 'goddessville', '514-819-9282', 20, 2
 );
 
 INSERT INTO Employees
 	VALUES( 
-3, 'Charlie Chaplin', 'Male', '1889-04-16', 'hilariousVille', '514-125-9583', 21, 1 
+3, 'Charlie Chaplin', 'Male', '1889-04-16', 'hilariousVille', '514-125-9583', 21, 3 
 );
 
 INSERT INTO Employees
 	VALUES( 
-4, 'Beyonce Knowles', 'Female', '1981-09-04', 'AllTheSingleLadiesVille', '514-832-8745', 18, 1 
+4, 'Beyonce Knowles', 'Female', '1981-09-04', 'AllTheSingleLadiesVille', '514-832-8745', 18, 4
 );
 
 INSERT INTO Employees
 	VALUES( 
-5, 'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 22, 1 
+5, 'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 22, 5
 );
 
 INSERT INTO Employees
 	VALUES( 
-6, 'Jennifer Love Hewitt', 'Female', '1979-03-21', 'loveVille', '514-573-9283', 28, 1 
+6, 'Jennifer Love Hewitt', 'Female', '1979-03-21', 'loveVille', '514-573-9283', 28, 6
 );
 
 INSERT INTO Employees
 	VALUES( 
-7, 'Ron Jeremy', 'Male', '1953-03-12', 'spreadDaLove', '514-534-8282', 25, 1 
+7, 'Ron Jeremy', 'Male', '1953-03-12', 'spreadDaLove', '514-534-8282', 25, 7 
 );
 
 INSERT INTO Employees
 	VALUES( 
-8, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 30, 1 
+8, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 30, 8
 );
 
 INSERT INTO Employees
 	VALUES( 
-9, 'Lil Wayne', 'Male', '1982-09-22', 'rapVille', '514-894-2573', 12, 1 
+9, 'Lil Wayne', 'Male', '1982-09-22', 'rapVille', '514-894-2573', 12, 9 
 );
 
 INSERT INTO Employees
 	VALUES( 
-10, 'Jennifer Lawrence', 'Female', '1990-08-15', 'lawVille', '514-244-5783', 60, 1 
+10, 'Jennifer Lawrence', 'Female', '1990-08-15', 'lawVille', '514-244-5783', 60, 10
 );
 
 
@@ -73,62 +73,62 @@ INSERT INTO Employees
 
 INSERT INTO Employees
 	VALUES( 
-12, 'Miley Cyrus', 'Female', '1992-11-23', 'wrekyoballz', '514-295-7283', 27, 1 
+12, 'Miley Cyrus', 'Female', '1992-11-23', 'wrekyoballz', '514-295-7283', 27, 2
 );
 
 INSERT INTO Employees
 	VALUES( 
-13, 'Stephen Hawking', 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 1 
+13, 'Stephen Hawking', 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 3
 );
 
 INSERT INTO Employees
 	VALUES( 
-14, 'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 1 
-);
-
-
-INSERT INTO Employees
-	VALUES( 
-15, 'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 1 
-);
-
-INSERT INTO Employees
-	VALUES( 
-16, 'Marilyn Monroe', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 1 
+14, 'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 4
 );
 
 
 INSERT INTO Employees
 	VALUES( 
-17, 'Kate Upton', 'Female', '1992-09-10', 'daModelVille', '450-295-8479', 30, 1 
+15, 'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 5
+);
+
+INSERT INTO Employees
+	VALUES( 
+16, 'Marilyn Monroe', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 6
 );
 
 
 INSERT INTO Employees
 	VALUES( 
-18, 'Sean Penn', 'Male', '1960-08-17', 'professionalVille', '438-293-8231', 29, 1 
+17, 'Kate Upton', 'Female', '1992-09-10', 'daModelVille', '450-295-8479', 30, 7
+);
+
+
+INSERT INTO Employees
+	VALUES( 
+18, 'Sean Penn', 'Male', '1960-08-17', 'professionalVille', '438-293-8231', 29, 8
 );
 
 INSERT INTO Employees
 	VALUES( 
-19, 'Emma Watson', 'Female', '1990-04-15', 'careDaEarthVille', '438-532-9293', 41, 1 
+19, 'Emma Watson', 'Female', '1990-04-15', 'careDaEarthVille', '438-532-9293', 41, 9
 );
 
 INSERT INTO Employees
 	VALUES( 
-20, 'Clint Eastwood', 'Male', '1930-05-31', 'farEastVille', '514-283-2543', 29, 1 
+20, 'Clint Eastwood', 'Male', '1930-05-31', 'farEastVille', '514-283-2543', 29, 10
 );
 
 =====================================================================================
 
 CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
-    Name CHAR(30) NOT NULL,
+    Name CHAR(20) NOT NULL,
     Gender CHAR(6) NOT NULL,
-    DOB VAR(20) NOT NULL,
-    EmployeeSIN INT
+    DOB DATE NOT NULL,
+    EmployeeSIN INT NOT NULL,
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
  );
-
 
 =====================================================================================
 
@@ -262,8 +262,10 @@ INSERT INTO Departments
 
 
 CREATE TABLE Locations(
-    Name CHAR(20),
-    DeptNum INT PRIMARY KEY
+    Name CHAR(20) NOT NULL,
+    DeptNum INT NOT NULL,
+    PRIMARY KEY CLUSTERED (Name, DeptNum),
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
 
 =====================================================================================
@@ -356,13 +358,15 @@ CREATE TABLE Supervises(
 
 =====================================================================================
 
-CREATE TABLE Projects1(
+CREATE TABLE Projects(
     ID int PRIMARY KEY,
     Location CHAR(20) NOT NULL,
     Name CHAR(20) NOT NULL,
     Stage CHAR(20) NOT NULL,
     DeptID int NOT NULL,
-    ManagerID int NOT NULL    
+    ManagerID int NOT NULL,
+    FOREIGN KEY (DeptID) REFERENCES Departments(ID) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerID) REFERENCES Employees(SIN) ON DELETE CASCADE    
 );
 =====================================================================================
 
@@ -426,8 +430,9 @@ CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
     HoursWorked int,
-    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN),
-    FOREIGN KEY (ProjectID) REFERENCES Projects(ID)
+    PRIMARY KEY CLUSTERED (WorkerSIN, ProjectID),
+    FOREIGN KEY (WorkerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ID) ON DELETE CASCADE
  );
 
 =====================================================================================
@@ -484,8 +489,9 @@ INSERT INTO WorksOn
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
     StartDate date NOT NULL,
-    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN),
-    FOREIGN KEY (DeptNum) REFERENCES Departments(ID)
+    PRIMARY KEY(DeptNum),
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
 
 =====================================================================================
