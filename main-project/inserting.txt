@@ -259,12 +259,13 @@ INSERT INTO Departments
 );
 
 =====================================================================================
-
+//Had to change locations so that it's just Name as primary key because we want to be 
+//departments have more than one location
 
 CREATE TABLE Locations(
     Name CHAR(20) NOT NULL,
     DeptNum INT NOT NULL,
-    PRIMARY KEY CLUSTERED (Name, DeptNum),
+    PRIMARY KEY (Name),
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
 
@@ -320,8 +321,18 @@ INSERT INTO Locations
 	VALUES(
 	'Hershey Park', 10
 );
-
-
+INSERT INTO Locations
+	VALUES(
+	'Hershey Park', 10
+);
+INSERT INTO Locations
+	VALUES(
+	'Magin Kingdom', 10
+);
+INSERT INTO Locations
+	VALUES(
+	'Madagascar', 8
+);
 =====================================================================================
 //Don't need this table anymore
 CREATE TABLE RelatesTo(
