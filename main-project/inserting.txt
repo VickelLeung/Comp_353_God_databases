@@ -13,6 +13,7 @@ CREATE TABLE Employees(
     DeptNumber int NOT NULL
 );
 =====================================================================================
+//AHHHHH ALL EMPLOYEES BELONG TO THE SAME DEPARTMENT NOOOOOOOOOOOOOOOOOOOOOOOOOOO
 
 INSERT INTO Employees
 	VALUES( 
@@ -127,8 +128,6 @@ CREATE TABLE Dependants(
     DOB VAR(20) NOT NULL,
     EmployeeSIN INT
  );
-
-
 
 
 =====================================================================================
