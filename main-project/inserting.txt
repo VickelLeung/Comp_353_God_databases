@@ -353,7 +353,7 @@ INSERT INTO RelatesTo
 =====================================================================================
 
 CREATE TABLE Supervises(
-    SubordinateIN int NOT NULL,
+    SubordinateSIN int NOT NULL,
     ManagerSIN int NOT NULL,
     FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN),
     FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN)
