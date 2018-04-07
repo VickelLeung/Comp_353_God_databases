@@ -318,7 +318,7 @@ INSERT INTO Locations
 
 INSERT INTO Locations
 	VALUES(
-	'Hershey Park', 1
+	'Hershey Park', 10
 );
 
 
