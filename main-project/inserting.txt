@@ -137,6 +137,7 @@ INSERT INTO Dependants
 	Values(1, 'Micheal Jackson', 'Male', '1958-08-29', 1
 );
 
+//I did these but it's not saved on here...
 
 =====================================================================================
 
@@ -263,7 +264,7 @@ INSERT INTO Locations
 
 
 =====================================================================================
-
+//Don't need this table anymore
 CREATE TABLE RelatesTo(
     EmployeeSIN int NOT NULL,
     DependantSIN int NOT NULL,
