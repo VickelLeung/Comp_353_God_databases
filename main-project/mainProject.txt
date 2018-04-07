@@ -7,9 +7,9 @@ CREATE TABLE Employees(
     Gender CHAR(6) NOT NULL,
     DOB CHAR(20) NOT NULL,
     Address CHAR(50) NOT NULL,
-    PhoneNumber CHAR(10)NOT NULL,
+    PhoneNumber CHAR(15)NOT NULL,
     Salary int NOT NULL,
-    DeptNumber int NOT NULL,
+    DeptNumber int NOT NULL
     
 );
 
@@ -81,7 +81,7 @@ CREATE TABLE WorksOn(
     ManagerSIN int NOT NULL,
     StartDate date NOT NULL,
     PRIMARY KEY(DeptNum),
-    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
     
