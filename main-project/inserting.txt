@@ -421,54 +421,54 @@ CREATE TABLE Projects(
 =====================================================================================
 
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Washington', 'Cascade', 'preliminary' , 1, 1
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(1, 'Cascade', 'preliminary' , 1, 1
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Montreal', 'Colossus', 'intermediate' , 2, 2
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(2, 'Colossus', 'intermediate' , 2, 2
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Vancouver', 'Nitro', 'advanced', 3, 3
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(3, 'Nitro', 'advanced', 3, 3
 
 );
 
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Utah', 'Project X', 'complete', 4, 4
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(4, 'Project X', 'complete', 4, 4
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Dubai', Yoda Y', 'complete', 5, 5
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(5, 'Yoda Y', 'complete', 5, 5
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Tokyo', 'Nitro', advanced, 6, 6
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(6, 'Nitro', 'advanced', 6, 6
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Seoul', 'romeo', 'intermediate' , 7, 7
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(7, 'romeo', 'intermediate' , 7, 7
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Shanghai', 'Mr.Coffee', 'preliminary' , 8, 8
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(8, 'Mr.Coffee', 'preliminary' , 8, 8
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES('Hong Kong', 'MangoOnDiet', advanced, 9, 9
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(9, 'MangoOnDiet', 'advanced', 9, 9
 
 );
 
-INSERT INTO Projects(Location, Name, Stage, DeptID, ManagerID)
-	VALUES( 'Amsterdam', 'redLights', 'intermediate' , 10, 10
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(10, 'redLights', 'intermediate' , 10, 10
 
 );
 
