@@ -1,8 +1,21 @@
 1)Find all employee with highest to lowest salary
 
+SELECT name, salary
+FROM Employees
+ORDER BY salary DESC;
+
+
 2) Find all employee working on more than 1 project or zero project
 
+SELECT name
+FROM Employees
+WHERE Employee_SIN <> IN(SELECT WorkerSIN FROM WorksOn) OR (SELECT WorkerSIN, COUNT(*) FROM WorksOn HAVING COUNT > 1);
+
 3) Find employee being supervised by supervisor
+
+SELECT Employees.name
+FROM Employees, Supervises
+WHERE Subordinate.SIN = Employee_SIN;
 
 1. Inserting/updating/tuples to relations/tables in your database. Examples of such tables include Projects, Employees, Departments, etc. The system should also allow operations of insert/update/delete of tuples and/or attributes. For example, we should be able to update attribute “Hours worked”, which is used to calculate the stipend of employees based on the hours she/he worked on different projects, considering the “hourly” charge for each employee (it is not necessary the same for all employees). 
 2. Queries like who works under which employee, 
