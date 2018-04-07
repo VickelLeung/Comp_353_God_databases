@@ -56,7 +56,7 @@ INSERT INTO Employees
 
 INSERT INTO Employees
 	VALUES( 
-9, 'Lil Wayne', 'Male', '1982-09-227, 'rapVille', '514-894-2573', 12, 1 
+9, 'Lil Wayne', 'Male', '1982-09-22', 'rapVille', '514-894-2573', 12, 1 
 );
 
 INSERT INTO Employees
@@ -77,7 +77,7 @@ INSERT INTO Employees
 
 INSERT INTO Employees
 	VALUES( 
-13, 'Stephen Hawking, 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 1 
+13, 'Stephen Hawking', 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 1 
 );
 
 INSERT INTO Employees
@@ -93,7 +93,7 @@ INSERT INTO Employees
 
 INSERT INTO Employees
 	VALUES( 
-16, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 1 
+16, 'Marilyn Monroe', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 1 
 );
 
 
@@ -134,10 +134,68 @@ CREATE TABLE Dependants(
 =====================================================================================
 
 INSERT INTO Dependants
-	Values(1, 'Micheal Jackson', 'Male', '1958-08-29', 1
+	Values(1, 'Janet Jacson', 'Female', '1958-08-29', 1
+);
+INSERT INTO Dependants
+	Values(2, 'La Toya Jackson', 'Female', '1958-08-29', 1
+);
+INSERT INTO Dependants
+	Values(3, 'Jermaine Jackson', 'Male', '1958-08-29', 1
+);
+INSERT INTO Dependants
+	Values(4, 'Randy Jackson', 'Male', '1958-08-29', 1
+);
+INSERT INTO Dependants
+	Values(5, 'Tito Jackson', 'Male', '1958-08-29', 1
+);
+INSERT INTO Dependants
+	Values(6, 'Nicole Kidman', 'Female', '1978-10-25', 11
+);
+INSERT INTO Dependants
+	Values(7, 'Katie Holmes', 'Female', '1948-03-19', 11
+);
+INSERT INTO Dependants
+	Values(8, 'Mimi Rogers', 'Female', '1968-06-12', 11
+);
+INSERT INTO Dependants
+	Values(9, 'William Mapother', 'Male', '1953-09-24', 11
+);
+INSERT INTO Dependants
+	Values(10, 'Tony Jacn', 'Female', '1958-08-29', 2
+);
+INSERT INTO Dependants
+	Values(11, 'Aladdin', 'Male', '1968-12-04', 15
+);
+INSERT INTO Dependants
+	Values(12, 'Katie Downtown', 'Female', '1945-07-22', 17
+);
+INSERT INTO Dependants
+	Values(13, 'Penn Seanson', 'Male', '1988-04-03', 18
+);
+INSERT INTO Dependants
+	Values(14, 'Beast', 'Male', '1958-04-03', 19
+);
+INSERT INTO Dependants
+	Values(15, 'Ron Weasley', 'Male', '1991-03-23', 19
+);
+INSERT INTO Dependants
+	Values(16, 'Tim Westworld', 'Male', '1968-01-01', 20
+);
+INSERT INTO Dependants
+	Values(17, 'Someone Related', 'Female', '1923-12-21', 9
+);
+INSERT INTO Dependants
+	Values(18, 'Another One', 'Male', '1976-07-13', 6
+);
+INSERT INTO Dependants
+	Values(19, 'Monique Richard', 'Female', '1996-06-16', 12
+);
+INSERT INTO Dependants
+	Values(20, 'Georgia George', 'Female', '1998-11-15', 14
 );
 
-//I did these but it's not saved on here...
+
+
 
 =====================================================================================
 
