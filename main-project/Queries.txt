@@ -10,7 +10,7 @@ ORDER BY salary DESC;
 
 SELECT name
 FROM Employees
-WHERE Employee_SIN <> IN(SELECT WorkerSIN FROM WorksOn) OR (SELECT WorkerSIN, COUNT(*) FROM WorksOn HAVING COUNT > 1);
+WHERE Employees.SIN <> IN(SELECT WorkerSIN FROM WorksOn) OR (SELECT WorkerSIN, COUNT(*) FROM WorksOn HAVING COUNT > 1);
 
 
 //Doesn't work
