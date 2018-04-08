@@ -420,7 +420,6 @@ CREATE TABLE Projects(
 );
 =====================================================================================
 
-
 INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
 	VALUES(1, 'Cascade', 'preliminary' , 1, 1
 
