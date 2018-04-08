@@ -20,15 +20,51 @@ FROM Employees, Supervises
 WHERE SubordinateSIN = Employees.SIN;
 
 1. Inserting/updating/tuples to relations/tables in your database. Examples of such tables include Projects, Employees, Departments, etc. The system should also allow operations of insert/update/delete of tuples and/or attributes. For example, we should be able to update attribute “Hours worked”, which is used to calculate the stipend of employees based on the hours she/he worked on different projects, considering the “hourly” charge for each employee (it is not necessary the same for all employees). 
-2. Queries like who works under which employee, 
+
+2. Who works under which employee,
+
+SELECT name, managerSIN
+FROM Employees, Supervises
+WHERE SubordinateSIN = SIN;
+
 How much each employee gets, 
+
+SELECT name, salary
+FROM Employees;
+
 In what stage a project is (considering for instance 4 levels: preliminary, intermediate, advanced, and complete)
- Who works on which project; 
+
+SELECT name, stage
+FROM Projects
+WHERE stage = 'preliminary'; 
+
+*stage is to be changed depending on level wanted*
+
+Who works on which project; 
+
+SELECT Employees.name, Projects.name
+FROM Employees, Projects, WorksOn
+WHERE WorksOn.WorkerSIN = Employees.SIN AND Projects.ID = WorksOn.projectID;
+
 List the project managed by each department? 
+
+SELECT Projects.name, Departments.name
+FROM Projects, Departments
+WHERE Projects.DeptID = Departments.ID;
+
 3. Each employee is involved in most and least number projects? 
+
+SELECT name, 0 AS NoOfProjects
+FROM Employees
+WHERE SIN NOT IN(SELECT WorkerSIN FROM WorksOn);
+
 4. What is the total pay for each project?
- For each department? 
+SELECT name, SUM(salary)
+FROM 
+For each department? 
+ 
 For the company in a certain period? 
-5. Which department manager is also the manager of some projects? 6. Etc…
+
+5. Which department manager is also the manager of some projects?
 
 
