@@ -54,17 +54,30 @@ WHERE Projects.DeptID = Departments.ID;
 
 3. Each employee is involved in most and least number projects? 
 
+// least number of projects
 SELECT name, 0 AS NoOfProjects
 FROM Employees
 WHERE SIN NOT IN(SELECT WorkerSIN FROM WorksOn);
 
 4. What is the total pay for each project?
-SELECT name, SUM(salary)
-FROM 
+
+SELECT Projects.name,SUM(salary)
+FROM Employees, WorksOn, Projects
+WHERE Projects.ID = WorksOn.ProjectID
+GROUP BY ProjectID;
+
 For each department? 
- 
+
+SELECT Departments.name, SUM(salary)
+FROM Employees, Departments
+WHERE DeptNumber = Departments.ID
+GROUP BY DeptNumber;
+
 For the company in a certain period? 
 
 5. Which department manager is also the manager of some projects?
 
+SELECT DISTINCT Employees.name
+FROM Employees, Projects, Manages
+WHERE Projects.ManagerID = Manages.ManagerSIN AND ManagerSIN = Employees.SIN;
 
