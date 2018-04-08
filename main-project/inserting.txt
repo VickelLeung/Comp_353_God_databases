@@ -342,8 +342,9 @@ INSERT INTO RelatesTo
 CREATE TABLE Supervises(
     SubordinateSIN int NOT NULL,
     ManagerSIN int NOT NULL,
-    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN),
-    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN)
+    PRIMARY KEY (SubordinateSIN),
+    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
 );
 
 =====================================================================================
