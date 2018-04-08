@@ -321,23 +321,6 @@ INSERT INTO Locations(Name, DeptNum)
 	'Madagascar', 8
 );
 =====================================================================================
-//Don't need this table anymore
-CREATE TABLE RelatesTo(
-    EmployeeSIN int NOT NULL,
-    DependantSIN int NOT NULL,
-    FOREIGN KEY (DependantSIN) REFERENCES Dependants(SID),
-    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
-);
-
-=====================================================================================
-
-INSERT INTO RelatesTo
-	VALUES(
-
-);
-
-
-=====================================================================================
 
 CREATE TABLE Supervises(
     SubordinateSIN int NOT NULL,
@@ -536,6 +519,7 @@ INSERT INTO WorksOn
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
+    UNIQUE(ManagerSIN),
     StartDate date NOT NULL,
     PRIMARY KEY(DeptNum),
     FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
