@@ -1,4 +1,63 @@
+--Creating Departments table first since Employee needs a department
+CREATE TABLE Departments(
+    ID int NOT NULL AUTO_INCREMENT,
+    Name CHAR(40),
+    UNIQUE(Name),
+    PRIMARY KEY(ID)
+);
 
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Marketing'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Info and tech'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Employee Management'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Sales'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Human Resources'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Research and Development'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Production and quality assurance'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Customer Service'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Supply Chain'
+);
+
+INSERT INTO Departments(Name)
+	VALUES(
+	'Purchasing'
+);
+
+--Creating Employees table
 CREATE TABLE Employees(
     SIN INT AUTO_INCREMENT PRIMARY KEY,
     UNIQUE (SIN),
@@ -13,6 +72,7 @@ CREATE TABLE Employees(
     FOREIGN KEY (DeptNumber) REFERENCES Departments(ID) ON DELETE CASCADE    
 );
 
+--Inserting into Employees table
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 35, 1 
 );
@@ -110,8 +170,8 @@ INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumb
  'Clint Eastwood', 'Male', '1930-05-31', 'farEastVille', '514-283-2543', 29, 10
 );
 
-=====================================================================================
 
+--Creating Dependants table
 CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
     Name CHAR(20) NOT NULL,
@@ -120,8 +180,6 @@ CREATE TABLE Dependants(
     EmployeeSIN INT NOT NULL,
     FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
  );
-
-=====================================================================================
 
 INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
 	Values('Janet Jacson', 'Female', '1958-08-29', 1
@@ -185,83 +243,15 @@ INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
 );
 
 
-
-
-=====================================================================================
-
-CREATE TABLE Departments(
-	ID int NOT NULL AUTO_INCREMENT,
-    Name CHAR(40),
-    UNIQUE(Name),
-    PRIMARY KEY(ID)
-);
-
-=====================================================================================
-
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Marketing'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Info and tech'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Employee Management'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Sales'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Human Resources'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Research and Development'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Production and quality assurance'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Customer Service'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Supply Chain'
-);
-
-INSERT INTO Departments(Name)
-	VALUES(
-	'Purchasing'
-);
-
-=====================================================================================
-//Had to change locations so that it's just Name as primary key because we want to be 
-//departments have more than one location
-
+--Creating Locations table
 CREATE TABLE Locations(
-	ID INT NOT NULL AUTO_INCREMENT,
+    ID INT NOT NULL AUTO_INCREMENT,
     Name CHAR(20) NOT NULL,
     DeptNum INT NOT NULL,
     PRIMARY KEY (ID),
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
 
-=====================================================================================
 
 INSERT INTO Locations(Name, DeptNum)
 	VALUES(
@@ -320,7 +310,6 @@ INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Madagascar', 8
 );
-=====================================================================================
 
 CREATE TABLE Supervises(
     SubordinateSIN int NOT NULL,
@@ -330,7 +319,6 @@ CREATE TABLE Supervises(
     FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
 );
 
-=====================================================================================
 INSERT INTO Supervises
 	VALUES(
 	2, 1
@@ -393,8 +381,8 @@ INSERT INTO Supervises
 	
 );
 
-=====================================================================================
-//We just need to check now that the locationID and DeptID are part of the same?
+
+--Creating Projects table
 CREATE TABLE Projects(
     ID int PRIMARY KEY AUTO_INCREMENT,
     LocationID INT NOT NULL,
@@ -406,7 +394,6 @@ CREATE TABLE Projects(
     FOREIGN KEY (ManagerID) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (LocationID) REFERENCES Locations(ID) ON DELETE CASCADE
 );
-=====================================================================================
 
 INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
 	VALUES(1, 'Cascade', 'preliminary' , 1, 1
@@ -459,18 +446,15 @@ INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
 
 );
 
-=====================================================================================
-
+--Create table for what each employee works on
 CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
-    HoursWorked int,
+    HoursWorked int NOT NULL,
     PRIMARY KEY CLUSTERED (WorkerSIN, ProjectID),
     FOREIGN KEY (WorkerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (ProjectID) REFERENCES Projects(ID) ON DELETE CASCADE
  );
-
-=====================================================================================
 
 INSERT INTO WorksOn
 	VALUES(1, 1, 56
@@ -518,8 +502,6 @@ INSERT INTO WorksOn
 	
 );
 
-=====================================================================================
-
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
@@ -529,8 +511,6 @@ INSERT INTO WorksOn
     FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
-
-=====================================================================================
 
 
 INSERT INTO Manages
