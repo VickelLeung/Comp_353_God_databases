@@ -1,4 +1,3 @@
-=====================================================================================
 
 CREATE TABLE Employees(
     SIN INT AUTO_INCREMENT PRIMARY KEY,
@@ -10,9 +9,9 @@ CREATE TABLE Employees(
     Address CHAR(50) NOT NULL,
     PhoneNumber CHAR(15)NOT NULL,
     Salary int NOT NULL,
-    DeptNumber int NOT NULL
+    DeptNumber int NOT NULL,
+    FOREIGN KEY (DeptNumber) REFERENCES Departments(ID) ON DELETE CASCADE    
 );
-=====================================================================================
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 35, 1 
