@@ -7,9 +7,10 @@ CREATE TABLE Employees(
     Gender CHAR(6) NOT NULL,
     DOB CHAR(20) NOT NULL,
     Address CHAR(50) NOT NULL,
-    PhoneNumber CHAR(10)NOT NULL,
+    PhoneNumber CHAR(15)NOT NULL,
     Salary int NOT NULL,
     DeptNumber int NOT NULL
+    
 );
 
 ALTER TABLE Employees ADD FOREIGN KEY (Deptnumber) REFERENCES Departments(ID);
@@ -18,12 +19,12 @@ CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
     Name CHAR(20) NOT NULL,
     Gender CHAR(6) NOT NULL,
-    DOB VAR(20) NOT NULL,
-    EmployeeSIN INT,
-    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) 
-    ON DELETE CASCADE
+    DOB DATE NOT NULL,
+    EmployeeSIN INT NOT NULL,
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
  );
 
+REMOVING THIS TABLE BECAUSE IT SEEMS TO BE USELESS BUT HERE JUST IN CASE
 /*CREATE TABLE RelatesTo(
     EmployeeSIN int NOT NULL,
     DependantSIN int NOT NULL,
@@ -32,7 +33,7 @@ CREATE TABLE Dependants(
 );/*
 
 CREATE TABLE Supervises(
-    SubordinateIN int NOT NULL,
+    SubordinateSIN int NOT NULL,
     ManagerSIN int NOT NULL,
     PRIMARY KEY (SubordinateSIN),
     FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
@@ -44,12 +45,12 @@ CREATE TABLE Departments(
     UNIQUE(Name),
     ID int,
     UNIQUE(ID),
-    PRIMARY KEY (SID, TID)
+    PRIMARY KEY (ID)
 );
 
 CREATE TABLE Locations(
     Name CHAR(20) NOT NULL,
-    DeptNum INT PRIMARY KEY NOT NULL,
+    DeptNum INT NOT NULL,
     PRIMARY KEY CLUSTERED (Name, DeptNum),
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
@@ -80,7 +81,7 @@ CREATE TABLE WorksOn(
     ManagerSIN int NOT NULL,
     StartDate date NOT NULL,
     PRIMARY KEY(DeptNum),
-    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
     

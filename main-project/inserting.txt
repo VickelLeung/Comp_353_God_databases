@@ -14,349 +14,449 @@ CREATE TABLE Employees(
 );
 =====================================================================================
 
-INSERT INTO Employees
-	VALUES( 
-1, 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 35, 1 
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
+	VALUES( 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 35, 1 
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-2, 'Jessica Alba', 'Female', '1981-04-28', 'goddessville', '514-819-9282', 20, 1 
+'Jessica Alba', 'Female', '1981-04-28', 'goddessville', '514-819-9282', 20, 2
 );
 
-INSERT INTO Employees
-	VALUES( 
-3, 'Charlie Chaplin', 'Male', '1889-04-16', 'hilariousVille', '514-125-9583', 21, 1 
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
+	VALUES(  'Charlie Chaplin', 'Male', '1889-04-16', 'hilariousVille', '514-125-9583', 21, 3 
 );
 
-INSERT INTO Employees
-	VALUES( 
-4, 'Beyonce Knowles', 'Female', '1981-09-04', 'AllTheSingleLadiesVille', '514-832-8745', 18, 1 
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
+	VALUES(  'Beyonce Knowles', 'Female', '1981-09-04', 'AllTheSingleLadiesVille', '514-832-8745', 18, 4
 );
 
-INSERT INTO Employees
-	VALUES( 
-5, 'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 22, 1 
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
+	VALUES(  'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 22, 5
 );
 
-INSERT INTO Employees
-	VALUES( 
-6, 'Jennifer Love Hewitt', 'Female', '1979-03-21', 'loveVille', '514-573-9283', 28, 1 
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
+	VALUES(  'Jennifer Love Hewitt', 'Female', '1979-03-21', 'loveVille', '514-573-9283', 28, 6
 );
 
-INSERT INTO Employees
-	VALUES( 
-7, 'Ron Jeremy', 'Male', '1953-03-12', 'spreadDaLove', '514-534-8282', 25, 1 
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
+	VALUES(  'Ron Jeremy', 'Male', '1953-03-12', 'spreadDaLove', '514-534-8282', 25, 7 
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-8, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 30, 1 
+'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 30, 8
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-9, 'Lil Wayne', 'Male', '1982-09-227, 'rapVille', '514-894-2573', 12, 1 
+'Lil Wayne', 'Male', '1982-09-22', 'rapVille', '514-894-2573', 12, 9 
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-10, 'Jennifer Lawrence', 'Female', '1990-08-15', 'lawVille', '514-244-5783', 60, 1 
+ 'Jennifer Lawrence', 'Female', '1990-08-15', 'lawVille', '514-244-5783', 60, 10
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-11, 'Tom Cruise', 'Male', '1962-08-03', 'cruisingU', '514-564-9233', 35, 1 
+ 'Tom Cruise', 'Male', '1962-08-03', 'cruisingU', '514-564-9233', 35, 1 
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-12, 'Miley Cyrus', 'Female', '1992-11-23', 'wrekyoballz', '514-295-7283', 27, 1 
+ 'Miley Cyrus', 'Female', '1992-11-23', 'wrekyoballz', '514-295-7283', 27, 2
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-13, 'Stephen Hawking, 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 1 
+ 'Stephen Hawking', 'Male', '1942-01-8', 'verySmartVille', '514-653-2234', 70, 3
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-14, 'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 1 
+1'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 4
 );
 
-INSERT INTO Employees
+
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-15, 'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 1 
+1'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 5
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-16, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 1 
+ 'Marilyn Monroe', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 6
 );
 
-INSERT INTO Employees
+
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-17, 'Kate Upton', 'Female', '1992-09-10', 'daModelVille', '450-295-8479', 30, 1 
+ 'Kate Upton', 'Female', '1992-09-10', 'daModelVille', '450-295-8479', 30, 7
 );
 
-INSERT INTO Employees
+
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-18, 'Sean Penn', 'Male', '1960-08-17', 'professionalVille', '438-293-8231', 29, 1 
+ 'Sean Penn', 'Male', '1960-08-17', 'professionalVille', '438-293-8231', 29, 8
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-19, 'Emma Watson', 'Female', '1990-04-15', 'careDaEarthVille', '438-532-9293', 41, 1 
+ 'Emma Watson', 'Female', '1990-04-15', 'careDaEarthVille', '438-532-9293', 41, 9
 );
 
-INSERT INTO Employees
+INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-20, 'Clint Eastwood', 'Male', '1930-05-31', 'farEastVille', '514-283-2543', 29, 1 
+ 'Clint Eastwood', 'Male', '1930-05-31', 'farEastVille', '514-283-2543', 29, 10
 );
 
 =====================================================================================
 
 CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
-    Name CHAR(30) NOT NULL,
+    Name CHAR(20) NOT NULL,
     Gender CHAR(6) NOT NULL,
-    DOB VAR(20) NOT NULL,
-    EmployeeSIN INT
+    DOB DATE NOT NULL,
+    EmployeeSIN INT NOT NULL,
+    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
  );
 
 =====================================================================================
 
-INSERT INTO Dependants
-	Values(1, 'Micheal Jackson', 'Male', '1958-08-29', 1
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Janet Jacson', 'Female', '1958-08-29', 1
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('La Toya Jackson', 'Female', '1958-08-29', 1
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Jermaine Jackson', 'Male', '1958-08-29', 1
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Randy Jackson', 'Male', '1958-08-29', 1
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Tito Jackson', 'Male', '1958-08-29', 1
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Nicole Kidman', 'Female', '1978-10-25', 11
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Katie Holmes', 'Female', '1948-03-19', 11
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('Mimi Rogers', 'Female', '1968-06-12', 11
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values('William Mapother', 'Male', '1953-09-24', 11
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Tony Jacn', 'Female', '1958-08-29', 2
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Aladdin', 'Male', '1968-12-04', 15
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Katie Downtown', 'Female', '1945-07-22', 17
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Penn Seanson', 'Male', '1988-04-03', 18
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Beast', 'Male', '1958-04-03', 19
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Ron Weasley', 'Male', '1991-03-23', 19
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Tim Westworld', 'Male', '1968-01-01', 20
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Someone Related', 'Female', '1923-12-21', 9
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Another One', 'Male', '1976-07-13', 6
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Monique Richard', 'Female', '1996-06-16', 12
+);
+INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
+	Values( 'Georgia George', 'Female', '1998-11-15', 14
 );
 
-INSERT INTO Dependants
-	Values(2, 'Jessica Alba', 'Female', '1981-04-28', 2
-);
+
 
 
 =====================================================================================
 
 CREATE TABLE Departments(
-    Name CHAR(20),
+	ID int NOT NULL AUTO_INCREMENT,
+    Name CHAR(40),
     UNIQUE(Name),
-    ID int,
-    UNIQUE(ID),
-    PRIMARY KEY(ID, Name)
+    PRIMARY KEY(ID)
 );
 
 =====================================================================================
 
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Marketing', 1
+	'Marketing'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Information and technology', 2
+	'Info and tech'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Employee Management', 3
+	'Employee Management'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Sales, 4
+	'Sales'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Human Ressources', 5
+	'Human Resources'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Research and Development', 6
+	'Research and Development'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Production and quality assurance', 7
+	'Production and quality assurance'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Customer Service', 8
+	'Customer Service'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Supply Chain', 9
+	'Supply Chain'
 );
 
-INSERT INTO Departments
+INSERT INTO Departments(Name)
 	VALUES(
-	'Purchasing', 10
+	'Purchasing'
 );
 
 =====================================================================================
+//Had to change locations so that it's just Name as primary key because we want to be 
+//departments have more than one location
 
 CREATE TABLE Locations(
-    Name CHAR(20),
-    DeptNum INT PRIMARY KEY
+	ID INT NOT NULL AUTO_INCREMENT,
+    Name CHAR(20) NOT NULL,
+    DeptNum INT NOT NULL,
+    PRIMARY KEY (ID),
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
 
 =====================================================================================
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Disney Land', 1
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'WonderLand', 2
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'LaRonde', 3
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Walt Disney', 4
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Disney Land', 5
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Universal Studio', 6
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Sea world', 7
 );
 
-
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Magic Kingdom', 8
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Universal Orlando', 9
 );
 
-INSERT INTO Locations
+INSERT INTO Locations(Name, DeptNum)
 	VALUES(
-	'Hershey Park', 1
+	'Hershey Park', 10
 );
-
-
-=====================================================================================
-
-CREATE TABLE RelatesTo(
-    EmployeeSIN int NOT NULL,
-    DependantSIN int NOT NULL,
-    FOREIGN KEY (DependantSIN) REFERENCES Dependants(SID),
-    FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN)
+INSERT INTO Locations(Name, DeptNum)
+	VALUES(
+	'Magin Kingdom', 10
 );
-
-=====================================================================================
-
-INSERT INTO RelatesTo
-	VALUES( 1, 2 
-
+INSERT INTO Locations(Name, DeptNum)
+	VALUES(
+	'Madagascar', 8
 );
-
-
 =====================================================================================
 
 CREATE TABLE Supervises(
-    SubordinateIN int NOT NULL,
+    SubordinateSIN int NOT NULL,
     ManagerSIN int NOT NULL,
-    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN),
-    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN)
+    PRIMARY KEY (SubordinateSIN),
+    FOREIGN KEY (SubordinateSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
 );
 
 =====================================================================================
+INSERT INTO Supervises
+	VALUES(
+	2, 1
+);
+INSERT INTO Supervises
+	VALUES(
+	3, 1
+);
+INSERT INTO Supervises
+	VALUES(
+	4, 1
+);
+INSERT INTO Supervises
+	VALUES(
+	6, 5
+);
+INSERT INTO Supervises
+	VALUES(
+	7, 5
+);
+INSERT INTO Supervises
+	VALUES(
+	9, 8
+);
+INSERT INTO Supervises
+	VALUES(
+	11, 10
+);
+INSERT INTO Supervises
+	VALUES(
+	12, 10
+);
+INSERT INTO Supervises
+	VALUES(
+	13, 10
+);
+INSERT INTO Supervises
+	VALUES(
+	15, 14
+);
+INSERT INTO Supervises
+	VALUES(
+	17, 16
+);
+INSERT INTO Supervises
+	VALUES(
+	18, 16
+);
+INSERT INTO Supervises
+	VALUES(
+	19, 16
+);
+INSERT INTO Supervises
+	VALUES(
+	20, 16
+);
 
 INSERT INTO Supervises
 	VALUES( 1, 1
 	
 );
 
-
-
 =====================================================================================
-
-CREATE TABLE Projects1(
-    ID int PRIMARY KEY,
-    Location CHAR(20) NOT NULL,
+//We just need to check now that the locationID and DeptID are part of the same?
+CREATE TABLE Projects(
+    ID int PRIMARY KEY AUTO_INCREMENT,
+    LocationID INT NOT NULL,
     Name CHAR(20) NOT NULL,
     Stage CHAR(20) NOT NULL,
     DeptID int NOT NULL,
-    ManagerID int NOT NULL    
+    ManagerID int NOT NULL,
+    FOREIGN KEY (DeptID) REFERENCES Departments(ID) ON DELETE CASCADE,
+    FOREIGN KEY (ManagerID) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (LocationID) REFERENCES Locations(ID) ON DELETE CASCADE
 );
 =====================================================================================
 
-*Dept and managerid?? not sure with managerID Halp plozz*
-
-
-INSERT INTO Projects
-	VALUES(1, 'Washington', 'Cascade', 'preliminary' , 1, 1
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(1, 'Cascade', 'preliminary' , 1, 1
 
 );
 
-INSERT INTO Projects
-	VALUES(2, 'Montreal', 'Colossus', 'intermediate' , 2, 2
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(2, 'Colossus', 'intermediate' , 2, 2
 
 );
 
-INSERT INTO Projects
-	VALUES(3, 'Vancouver', 'Nitro', advanced, 3, 3
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(3, 'Nitro', 'advanced', 3, 3
 
 );
 
 
-INSERT INTO Projects
-	VALUES(4, 'Utah', 'Project X', 'complete', 4, 4
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(4, 'Project X', 'complete', 4, 4
 
 );
 
-INSERT INTO Projects
-	VALUES(5, 'Dubai', Yoda Y', 'complete', 5, 5
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(5, 'Yoda Y', 'complete', 5, 5
 
 );
 
-INSERT INTO Projects
-	VALUES(6, 'Tokyo', 'Nitro', advanced, 6, 6
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(6, 'Nitro', 'advanced', 6, 6
 
 );
 
-INSERT INTO Projects
-	VALUES(7, 'Seoul', 'romeo', 'intermediate' , 7, 7
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(7, 'romeo', 'intermediate' , 7, 7
 
 );
 
-INSERT INTO Projects
-	VALUES(8, 'Shanghai', 'Mr.Coffee', 'preliminary' , 8, 8
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(8, 'Mr.Coffee', 'preliminary' , 8, 8
 
 );
 
-INSERT INTO Projects
-	VALUES(9, 'Hong Kong', 'MangoOnDiet', advanced, 9, 9
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(9, 'MangoOnDiet', 'advanced', 9, 9
 
 );
 
-INSERT INTO Projects
-	VALUES(10, 'Amsterdam', 'redLights', 'intermediate' , 10, 10
+INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
+	VALUES(10, 'redLights', 'intermediate' , 10, 10
 
 );
 
@@ -366,8 +466,9 @@ CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
     HoursWorked int,
-    FOREIGN KEY (WorkerSIN) REFERENCES Employee(SIN),
-    FOREIGN KEY (ProjectID) REFERENCES Projects(ID)
+    PRIMARY KEY CLUSTERED (WorkerSIN, ProjectID),
+    FOREIGN KEY (WorkerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ID) ON DELETE CASCADE
  );
 
 =====================================================================================
@@ -423,31 +524,53 @@ INSERT INTO WorksOn
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
+    UNIQUE(ManagerSIN),
     StartDate date NOT NULL,
-    FOREIGN KEY (ManagerSIN) REFERENCES Employee(SIN),
-    FOREIGN KEY (DeptNum) REFERENCES Departments(ID)
+    PRIMARY KEY(DeptNum),
+    FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE,
+    FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
   );
 
 =====================================================================================
 
 
 INSERT INTO Manages
-	VALUES( 1, 1 , '2018-03-10'
+	VALUES( 1, 1 , '2016-03-12'
 
 );
-
 INSERT INTO Manages
-	VALUES( 1, 2 , '2018-03-10'
+	VALUES( 2, 2 , '2018-01-10'
 
 );
-
 INSERT INTO Manages
-	VALUES( 2, 3 , '2018-03-10'
+	VALUES( 3, 3 , '2012-05-21'
 
 );
-
 INSERT INTO Manages
-	VALUES( 3, 4 , '2018-03-10'
+	VALUES( 4, 4 , '2017-02-26'
 
 );
+INSERT INTO Manages
+	VALUES( 5, 5 , '2014-12-24'
 
+);
+INSERT INTO Manages
+	VALUES( 6, 6 , '2018-03-10'
+
+);
+INSERT INTO Manages
+	VALUES( 7, 7 , '2018-04-11'
+
+);
+INSERT INTO Manages
+	VALUES( 8, 8 , '2013-03-10'
+
+);
+INSERT INTO Manages
+	VALUES( 9, 9 , '2015-08-07'
+
+);
+INSERT INTO Manages
+	VALUES( 10, 10 , '2015-09-29'
+
+);
