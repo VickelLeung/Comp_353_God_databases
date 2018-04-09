@@ -42,7 +42,7 @@ WHERE stage = 'preliminary';
 
 Who works on which project; 
 
-SELECT Employees.name, Projects.name
+SELECT Employees.name as Employee, Projects.name as project
 FROM Employees, Projects, WorksOn
 WHERE WorksOn.WorkerSIN = Employees.SIN AND Projects.ID = WorksOn.projectID;
 
