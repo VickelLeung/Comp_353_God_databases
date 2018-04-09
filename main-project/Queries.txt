@@ -40,6 +40,10 @@ WHERE stage = 'preliminary';
 
 *stage is to be changed depending on level wanted*
 
+==Should we display what stage of each projects? Hence what's below==
+SELECT name, stage
+FROM Projects;
+
 Who works on which project; 
 
 SELECT Employees.name as Employee, Projects.name as project
@@ -48,7 +52,7 @@ WHERE WorksOn.WorkerSIN = Employees.SIN AND Projects.ID = WorksOn.projectID;
 
 List the project managed by each department? 
 
-SELECT Projects.name, Departments.name
+SELECT Projects.name as project, Departments.name as department
 FROM Projects, Departments
 WHERE Projects.DeptID = Departments.ID;
 
