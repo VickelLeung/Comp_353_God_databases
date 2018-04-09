@@ -64,7 +64,6 @@ INSERT INTO Employees
 10, 'Jennifer Lawrence', 'Female', '1990-08-15', 'lawVille', '514-244-5783', 60, 1 
 );
 
-
 INSERT INTO Employees
 	VALUES( 
 11, 'Tom Cruise', 'Male', '1962-08-03', 'cruisingU', '514-564-9233', 35, 1 
@@ -85,7 +84,6 @@ INSERT INTO Employees
 14, 'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 1 
 );
 
-
 INSERT INTO Employees
 	VALUES( 
 15, 'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 1 
@@ -96,12 +94,10 @@ INSERT INTO Employees
 16, 'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '450-594-8273', 40, 1 
 );
 
-
 INSERT INTO Employees
 	VALUES( 
 17, 'Kate Upton', 'Female', '1992-09-10', 'daModelVille', '450-295-8479', 30, 1 
 );
-
 
 INSERT INTO Employees
 	VALUES( 
@@ -128,13 +124,14 @@ CREATE TABLE Dependants(
     EmployeeSIN INT
  );
 
-
-
-
 =====================================================================================
 
 INSERT INTO Dependants
 	Values(1, 'Micheal Jackson', 'Male', '1958-08-29', 1
+);
+
+INSERT INTO Dependants
+	Values(2, 'Jessica Alba', 'Female', '1981-04-28', 2
 );
 
 
@@ -147,6 +144,7 @@ CREATE TABLE Departments(
     UNIQUE(ID),
     PRIMARY KEY(ID, Name)
 );
+
 =====================================================================================
 
 
@@ -201,7 +199,6 @@ INSERT INTO Departments
 );
 
 =====================================================================================
-
 
 CREATE TABLE Locations(
     Name CHAR(20),
@@ -274,7 +271,7 @@ CREATE TABLE RelatesTo(
 =====================================================================================
 
 INSERT INTO RelatesTo
-	VALUES(
+	VALUES( 1, 2 
 
 );
 
@@ -290,9 +287,10 @@ CREATE TABLE Supervises(
 
 =====================================================================================
 
-
-
-
+INSERT INTO Supervises
+	VALUES( 1, 1
+	
+);
 
 
 
@@ -438,5 +436,18 @@ INSERT INTO Manages
 
 );
 
+INSERT INTO Manages
+	VALUES( 1, 2 , '2018-03-10'
 
+);
+
+INSERT INTO Manages
+	VALUES( 2, 3 , '2018-03-10'
+
+);
+
+INSERT INTO Manages
+	VALUES( 3, 4 , '2018-03-10'
+
+);
 
