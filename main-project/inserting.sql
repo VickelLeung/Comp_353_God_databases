@@ -1,4 +1,5 @@
 --Creating Departments table first since Employee needs a department
+DROP TABLE IF EXISTS `Departments`;
 CREATE TABLE Departments(
     ID int NOT NULL AUTO_INCREMENT,
     Name CHAR(40),
@@ -58,6 +59,7 @@ INSERT INTO Departments(Name)
 );
 
 --Creating Employees table
+DROP TABLE IF EXISTS `Employees`;
 CREATE TABLE Employees(
     SIN INT AUTO_INCREMENT PRIMARY KEY,
     UNIQUE (SIN),
@@ -74,7 +76,7 @@ CREATE TABLE Employees(
 
 --Inserting into Employees table
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
-	VALUES( 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 35, 1 
+	VALUES( 'Micheal Jackson', 'Male', '1958-08-29', 'heavenville', '514-666-8648', 70, 1 
 );
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
@@ -91,7 +93,7 @@ INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumb
 );
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
-	VALUES(  'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 22, 5
+	VALUES(  'Charlie Sheen', 'Male', '1965-09-03', 'biWinning', '514-232-5839', 65, 5
 );
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
@@ -104,7 +106,7 @@ INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumb
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 30, 8
+'Selena Gomez', 'Female', '1992-07-22', 'HeartBreakVille', '514-594-8273', 50, 8
 );
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
@@ -134,13 +136,13 @@ INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumb
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-1'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 4
+'Nina Dobrev', 'Female', '1989-01-09', 'PrettiestQueen', '450-292-7283', 50, 4
 );
 
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
 	VALUES( 
-1'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 5
+'Robin Williams', 'Male', '1951-08-21', 'funnyVille', '514-292-7272', 30, 5
 );
 
 INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumber)
@@ -172,6 +174,7 @@ INSERT INTO Employees (Name, Gender, DOB, Address, PhoneNumber, Salary, DeptNumb
 
 
 --Creating Dependants table
+DROP TABLE IF EXISTS `Dependants`;
 CREATE TABLE Dependants(
     SID INT AUTO_INCREMENT PRIMARY KEY,
     Name CHAR(20) NOT NULL,
@@ -244,6 +247,7 @@ INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
 
 
 --Creating Locations table
+DROP TABLE IF EXISTS `Locations`;
 CREATE TABLE Locations(
     ID INT NOT NULL AUTO_INCREMENT,
     Name CHAR(20) NOT NULL,
@@ -311,6 +315,8 @@ INSERT INTO Locations(Name, DeptNum)
 	'Madagascar', 8
 );
 
+--Creating Supervises table
+DROP TABLE IF EXISTS `Supervises`;
 CREATE TABLE Supervises(
     SubordinateSIN int NOT NULL,
     ManagerSIN int NOT NULL,
@@ -367,6 +373,7 @@ INSERT INTO Supervises
 	VALUES(
 	18, 16
 );
+--missing these employees
 INSERT INTO Supervises
 	VALUES(
 	19, 16
@@ -376,13 +383,9 @@ INSERT INTO Supervises
 	20, 16
 );
 
-INSERT INTO Supervises
-	VALUES( 1, 1
-	
-);
-
 
 --Creating Projects table
+DROP TABLE IF EXISTS `Projects`;
 CREATE TABLE Projects(
     ID int PRIMARY KEY AUTO_INCREMENT,
     LocationID INT NOT NULL,
@@ -447,6 +450,8 @@ INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
 );
 
 --Create table for what each employee works on
+DROP TABLE IF EXISTS 'WorksOn';
+
 CREATE TABLE WorksOn(
     WorkerSIN int NOT NULL,
     ProjectID int NOT NULL,
@@ -502,6 +507,7 @@ INSERT INTO WorksOn
 	
 );
 
+DROP TABLE IF EXISTS `Manages`;
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
     ManagerSIN int NOT NULL,
