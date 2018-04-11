@@ -1,3 +1,5 @@
+--RECOMMENDED QUERIES
+
 --Find all employee with highest to lowest salary
 
 SELECT name, salary
