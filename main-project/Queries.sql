@@ -1,4 +1,4 @@
-﻿1)Find all employee with highest to lowest salary
+--Find all employee with highest to lowest salary
 
 SELECT name, salary
 FROM Employees
