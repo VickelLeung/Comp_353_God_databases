@@ -7,7 +7,7 @@ CREATE TABLE Departments(
     PRIMARY KEY(ID)
 );
 
-
+--Inserting into departments
 INSERT INTO Departments(Name)
 	VALUES(
 	'Marketing'
@@ -184,6 +184,7 @@ CREATE TABLE Dependants(
     FOREIGN KEY (EmployeeSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
  );
 
+--Inserting into Dependants table
 INSERT INTO Dependants(Name, Gender, DOB, EmployeeSIN)
 	Values('Janet Jacson', 'Female', '1958-08-29', 1
 );
@@ -256,7 +257,7 @@ CREATE TABLE Locations(
     FOREIGN KEY (DeptNum) REFERENCES Departments(ID) ON DELETE CASCADE
 );
 
-
+--Inserting into Locations table
 INSERT INTO Locations(Name, DeptNum)
 	VALUES(
 	'Disney Land', 1
@@ -325,6 +326,7 @@ CREATE TABLE Supervises(
     FOREIGN KEY (ManagerSIN) REFERENCES Employees(SIN) ON DELETE CASCADE
 );
 
+--Inserting into Supervises table
 INSERT INTO Supervises
 	VALUES(
 	2, 1
@@ -373,7 +375,7 @@ INSERT INTO Supervises
 	VALUES(
 	18, 16
 );
---missing these employees
+
 INSERT INTO Supervises
 	VALUES(
 	19, 16
@@ -398,6 +400,7 @@ CREATE TABLE Projects(
     FOREIGN KEY (LocationID) REFERENCES Locations(ID) ON DELETE CASCADE
 );
 
+--Inserting into Projects table
 INSERT INTO Projects(LocationID, Name, Stage, DeptID, ManagerID)
 	VALUES(1, 'Cascade', 'preliminary' , 1, 1
 
@@ -461,6 +464,8 @@ CREATE TABLE WorksOn(
     FOREIGN KEY (ProjectID) REFERENCES Projects(ID) ON DELETE CASCADE
  );
 
+
+--Inserting into WorksON table
 INSERT INTO WorksOn
 	VALUES(1, 1, 56
 	
@@ -507,6 +512,8 @@ INSERT INTO WorksOn
 	
 );
 
+
+--Creating Manages table
 DROP TABLE IF EXISTS `Manages`;
  CREATE TABLE Manages(
     DeptNum int NOT NULL,
@@ -519,6 +526,7 @@ DROP TABLE IF EXISTS `Manages`;
   );
 
 
+--Inserting into Manages table
 INSERT INTO Manages
 	VALUES( 1, 1 , '2016-03-12'
 
